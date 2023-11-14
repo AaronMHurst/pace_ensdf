@@ -1,0 +1,1965 @@
+{
+    "parentAtomicNumber": 19,
+    "parentAtomicMass": 46,
+    "parentNeutronNumber": 27,
+    "daughterAtomicNumber": 20,
+    "daughterAtomicMass": 46,
+    "daughterNeutronNumber": 26,
+    "levelEnergyParentDecay": "0",
+    "parentID": "K46",
+    "daughterID": "Ca46",
+    "decayMode": "betaMinusDecay",
+    "totalNumberLevels": 9,
+    "totalNumberGammas": 13,
+    "totalNumberParticleDecays": 7,
+    "decaySchemeNormalization": [
+        {
+            "normalizationRecord": [
+                {
+                    "recordExists": true,
+                    "multiplerPhotonIntensity": 1.0,
+                    "dMultiplerPhotonIntensity": 0.5,
+                    "recordExistsNR": true,
+                    "multiplerTransitionIntensity": 1.0,
+                    "dMultiplerTransitionIntensity": 0.0,
+                    "recordExistsNT": true,
+                    "multiplerBranchingRatio": 1.0,
+                    "dMultiplerBranchingRatio": 0.0,
+                    "recordExistsBR": true,
+                    "multiplerLeptonIntensity": 1.0,
+                    "dMultiplerLeptonIntensity": 0.0,
+                    "recordExistsNB": true,
+                    "multiplierDelayedParticleIntensity": 0.0,
+                    "dMultiplierDelayedParticleIntensity": 0.0,
+                    "recordExistsNP": false
+                }
+            ],
+            "productionNormalizationRecord": [
+                {
+                    "recordExists": true,
+                    "multiplierPhotonIntensityBranchingRatioCorrected": 1.0,
+                    "dMultiplierPhotonIntensityBranchingRatioCorrected": 0.5,
+                    "recordExistsPNR": false,
+                    "multiplierTransitionIntensityBranchingRatioCorrected": 1.0,
+                    "dMultiplierTransitionIntensityBranchingRatioCorrected": 0.0,
+                    "recordExistsPNT": false,
+                    "multiplierLeptonIntensityBranchingRatioCorrected": 1.0,
+                    "dMultiplierLeptonIntensityBranchingRatioCorrected": 0.0,
+                    "recordExistsPNB": false,
+                    "multiplierDelayedParticleIntensity": 0.0,
+                    "dMultiplierDelayedParticleIntensity": 0.0,
+                    "recordExistsPNP": false
+                }
+            ]
+        }
+    ],
+    "parentDecay": [
+        {
+            "parentIsIsomer": false,
+            "parentDecayLevelEnergy": 0.0,
+            "dParentDecayLevelEnergy": 0.0,
+            "parentDecayLevelEnergyIsKnown": true,
+            "parentDecayLevelEnergyThreshold": null,
+            "parentDecayLevelEnergyOffset": null,
+            "parentDecayLevelEnergyOffsetDirection": null,
+            "valueQ": 7716.0,
+            "dValueQ": 16.0,
+            "atomicIonizationState": null,
+            "halfLife": [
+                {
+                    "halfLifeBest": 105.0,
+                    "dHalfLifeBest": 10.0,
+                    "unitHalfLifeBest": "s",
+                    "halfLifeConverted": 105.0,
+                    "dHalfLifeConverted": 10.0,
+                    "unitHalfLifeConverted": "s"
+                }
+            ],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 2.0,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": -1,
+                    "paritySign": "negative",
+                    "parityIsTentative": true
+                }
+            ]
+        }
+    ],
+    "levelScheme": [
+        {
+            "levelIndex": 0,
+            "levelEnergy": 0.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 0.0,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 0,
+            "gammaDecay": [],
+            "betaMinusDecay": []
+        },
+        {
+            "levelIndex": 1,
+            "levelEnergy": 1345.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 2.0,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 1,
+            "gammaDecay": [
+                {
+                    "gammaEnergy": 1345.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 1,
+                    "levelIndexFinal": 0,
+                    "levelEnergyInitial": 1345.0,
+                    "levelEnergyFinal": 0.0,
+                    "gammaIntensity": 100.0,
+                    "dGammaIntensity": 0.0,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                }
+            ],
+            "betaMinusDecay": [
+                {
+                    "endPointBetaMinusEnergy": 6300.0,
+                    "dEndPointBetaMinusEnergy": 300.0,
+                    "betaMinusIntensity": 63.0,
+                    "dBetaMinusIntensity": 32.0,
+                    "logFT": 6.6,
+                    "dLogFT": 3.3,
+                    "averageBetaMinusEnergy": 2941.0,
+                    "dAverageBetaMinusEnergy": 8.0,
+                    "betaMinusDose": 1.85283,
+                    "dBetaMinusDose": 0.941133495313,
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 2,
+            "levelEnergy": 2580.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 4.0,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 1,
+            "gammaDecay": [
+                {
+                    "gammaEnergy": 1235.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 2,
+                    "levelIndexFinal": 1,
+                    "levelEnergyInitial": 2580.0,
+                    "levelEnergyFinal": 1345.0,
+                    "gammaIntensity": 6.4,
+                    "dGammaIntensity": 0.3,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                }
+            ],
+            "betaMinusDecay": [
+                {
+                    "endPointBetaMinusEnergy": 5136.0,
+                    "dEndPointBetaMinusEnergy": 16.0,
+                    "betaMinusIntensity": 3.0,
+                    "dBetaMinusIntensity": 2.0,
+                    "logFT": 9.3,
+                    "dLogFT": 4.7,
+                    "averageBetaMinusEnergy": 2346.0,
+                    "dAverageBetaMinusEnergy": 8.0,
+                    "betaMinusDose": 0.07038,
+                    "dBetaMinusDose": 0.0469206138067,
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 3,
+            "levelEnergy": 3020.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 2.0,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 2,
+            "gammaDecay": [
+                {
+                    "gammaEnergy": 1675.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 3,
+                    "levelIndexFinal": 1,
+                    "levelEnergyInitial": 3020.0,
+                    "levelEnergyFinal": 1345.0,
+                    "gammaIntensity": 3.5,
+                    "dGammaIntensity": 0.2,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                },
+                {
+                    "gammaEnergy": 3020.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 3,
+                    "levelIndexFinal": 0,
+                    "levelEnergyInitial": 3020.0,
+                    "levelEnergyFinal": 0.0,
+                    "gammaIntensity": 2.2,
+                    "dGammaIntensity": 0.1,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                }
+            ],
+            "betaMinusDecay": []
+        },
+        {
+            "levelIndex": 4,
+            "levelEnergy": 3630.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 3.0,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": -1,
+                    "paritySign": "negative",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 1,
+            "gammaDecay": [
+                {
+                    "gammaEnergy": 2285.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 4,
+                    "levelIndexFinal": 1,
+                    "levelEnergyInitial": 3630.0,
+                    "levelEnergyFinal": 1345.0,
+                    "gammaIntensity": 5.1,
+                    "dGammaIntensity": 0.3,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                }
+            ],
+            "betaMinusDecay": [
+                {
+                    "endPointBetaMinusEnergy": 4086.0,
+                    "dEndPointBetaMinusEnergy": 16.0,
+                    "betaMinusIntensity": 5.0,
+                    "dBetaMinusIntensity": 2.0,
+                    "logFT": 6.8,
+                    "dLogFT": 3.4,
+                    "averageBetaMinusEnergy": 1824.0,
+                    "dAverageBetaMinusEnergy": 8.0,
+                    "betaMinusDose": 0.0912,
+                    "dBetaMinusDose": 0.0364821929165,
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 5,
+            "levelEnergy": 4520.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": null,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 0,
+                    "paritySign": null,
+                    "parityIsTentative": true
+                }
+            ],
+            "numberOfGammas": 2,
+            "gammaDecay": [
+                {
+                    "gammaEnergy": 3170.0,
+                    "dGammaEnergy": 0.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 5,
+                    "levelIndexFinal": 1,
+                    "levelEnergyInitial": 4520.0,
+                    "levelEnergyFinal": 1345.0,
+                    "gammaIntensity": 0.0,
+                    "dGammaIntensity": 0.0,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                },
+                {
+                    "gammaEnergy": 4520.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 5,
+                    "levelIndexFinal": 0,
+                    "levelEnergyInitial": 4520.0,
+                    "levelEnergyFinal": 0.0,
+                    "gammaIntensity": 0.6,
+                    "dGammaIntensity": 0.3,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                }
+            ],
+            "betaMinusDecay": [
+                {
+                    "endPointBetaMinusEnergy": 3196.0,
+                    "dEndPointBetaMinusEnergy": 16.0,
+                    "betaMinusIntensity": 0.6,
+                    "dBetaMinusIntensity": 0.3,
+                    "logFT": 7.3,
+                    "dLogFT": 3.6,
+                    "averageBetaMinusEnergy": 1393.0,
+                    "dAverageBetaMinusEnergy": 8.0,
+                    "betaMinusDose": 0.008358,
+                    "dBetaMinusDose": 0.00417927565494,
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 6,
+            "levelEnergy": 5080.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": null,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 0,
+                    "paritySign": null,
+                    "parityIsTentative": true
+                }
+            ],
+            "numberOfGammas": 3,
+            "gammaDecay": [
+                {
+                    "gammaEnergy": 1450.0,
+                    "dGammaEnergy": 0.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 6,
+                    "levelIndexFinal": 4,
+                    "levelEnergyInitial": 5080.0,
+                    "levelEnergyFinal": 3630.0,
+                    "gammaIntensity": 0.0,
+                    "dGammaIntensity": 0.0,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                },
+                {
+                    "gammaEnergy": 2060.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 6,
+                    "levelIndexFinal": 3,
+                    "levelEnergyInitial": 5080.0,
+                    "levelEnergyFinal": 3020.0,
+                    "gammaIntensity": 4.5,
+                    "dGammaIntensity": 0.2,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                },
+                {
+                    "gammaEnergy": 3735.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 6,
+                    "levelIndexFinal": 1,
+                    "levelEnergyInitial": 5080.0,
+                    "levelEnergyFinal": 1345.0,
+                    "gammaIntensity": 21.4,
+                    "dGammaIntensity": 1.1,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                }
+            ],
+            "betaMinusDecay": [
+                {
+                    "endPointBetaMinusEnergy": 2636.0,
+                    "dEndPointBetaMinusEnergy": 16.0,
+                    "betaMinusIntensity": 25.0,
+                    "dBetaMinusIntensity": 12.0,
+                    "logFT": 5.3,
+                    "dLogFT": 2.6,
+                    "averageBetaMinusEnergy": 1124.0,
+                    "dAverageBetaMinusEnergy": 8.0,
+                    "betaMinusDose": 0.281,
+                    "dBetaMinusDose": 0.13489482718,
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 7,
+            "levelEnergy": 6295.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": null,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 0,
+                    "paritySign": null,
+                    "parityIsTentative": true
+                }
+            ],
+            "numberOfGammas": 2,
+            "gammaDecay": [
+                {
+                    "gammaEnergy": 3710.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 7,
+                    "levelIndexFinal": 2,
+                    "levelEnergyInitial": 6295.0,
+                    "levelEnergyFinal": 2580.0,
+                    "gammaIntensity": 1.1,
+                    "dGammaIntensity": 0.06,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                },
+                {
+                    "gammaEnergy": 4950.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 7,
+                    "levelIndexFinal": 1,
+                    "levelEnergyInitial": 6295.0,
+                    "levelEnergyFinal": 1345.0,
+                    "gammaIntensity": 0.4,
+                    "dGammaIntensity": 0.02,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                }
+            ],
+            "betaMinusDecay": [
+                {
+                    "endPointBetaMinusEnergy": 1421.0,
+                    "dEndPointBetaMinusEnergy": 16.0,
+                    "betaMinusIntensity": 1.5,
+                    "dBetaMinusIntensity": 0.8,
+                    "logFT": 5.4,
+                    "dLogFT": 2.7,
+                    "averageBetaMinusEnergy": 558.0,
+                    "dAverageBetaMinusEnergy": 8.0,
+                    "betaMinusDose": 0.00837,
+                    "dBetaMinusDose": 0.00446561261195,
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 8,
+            "levelEnergy": 6625.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": null,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 0,
+                    "paritySign": null,
+                    "parityIsTentative": true
+                }
+            ],
+            "numberOfGammas": 1,
+            "gammaDecay": [
+                {
+                    "gammaEnergy": 5280.0,
+                    "dGammaEnergy": 3.0,
+                    "gammaEnergyIsKnown": true,
+                    "gammaEnergyThreshold": null,
+                    "gammaEnergyOffset": null,
+                    "gammaEnergyOffsetDirection": null,
+                    "levelIndexInitial": 8,
+                    "levelIndexFinal": 1,
+                    "levelEnergyInitial": 6625.0,
+                    "levelEnergyFinal": 1345.0,
+                    "gammaIntensity": 0.1,
+                    "dGammaIntensity": 0.05,
+                    "multipolarity": null,
+                    "multipolarityIsTentative": false,
+                    "multipolarityIsAssumed": false,
+                    "mixingRatio": null,
+                    "dMixingRatio": null,
+                    "mixingRatioSign": null,
+                    "calculatedTotalInternalConversionCoefficient": 0.0,
+                    "dCalculatedTotalInternalConversionCoefficient": 0.0,
+                    "experimentalTotalInternalConversionCoefficient": null,
+                    "dExperimentalTotalInternalConversionCoefficient": null,
+                    "totalConversionElectronIntensity": null,
+                    "dTotalConversionElectronIntensity": null,
+                    "calculatedAtomicShellConversionCoefficients": [
+                        {
+                            "calculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellK": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellL": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellM": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellN": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellO": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellP": 0.0,
+                            "calculatedInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dCalculatedInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellConversionCoefficients": [
+                        {
+                            "sumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusL": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusM": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusN": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusO": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "dSumConversionCoefficientsAtomicShellPlusP": 0.0,
+                            "sumConversionCoefficientsAtomicShellPlusQ": 0.0,
+                            "doSumConversionCoefficientsAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "conversionElectronIntensityAtomicShellToTotalRatios": [
+                        {
+                            "conversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellKtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellLtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellMtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellNtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellOtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellPtoTotal": 0.0,
+                            "conversionElectronIntensityRatioAtomicShellQtoTotal": 0.0,
+                            "dConversionElectronIntensityRatioAtomicShellQtoTotal": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellConversionCoefficients": [
+                        {
+                            "experimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellK": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellL": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellM": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellN": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellO": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellP": 0.0,
+                            "experimentalInternalConversionCoefficientAtomicShellQ": 0.0,
+                            "dExperimentalInternalConversionCoefficientAtomicShellQ": 0.0
+                        }
+                    ],
+                    "atomicShellConversionElectronIntensities": [
+                        {
+                            "conversionElectronIntensityAtomicShellK": 0.0,
+                            "dConversionElectronIntensityAtomicShellK": 0.0,
+                            "conversionElectronIntensityAtomicShellL": 0.0,
+                            "dConversionElectronIntensityAtomicShellL": 0.0,
+                            "conversionElectronIntensityAtomicShellM": 0.0,
+                            "dConversionElectronIntensityAtomicShellM": 0.0,
+                            "conversionElectronIntensityAtomicShellN": 0.0,
+                            "dConversionElectronIntensityAtomicShellN": 0.0,
+                            "conversionElectronIntensityAtomicShellO": 0.0,
+                            "dConversionElectronIntensityAtomicShellO": 0.0,
+                            "conversionElectronIntensityAtomicShellP": 0.0,
+                            "dConversionElectronIntensityAtomicShellP": 0.0,
+                            "conversionElectronIntensityAtomicShellQ": 0.0,
+                            "dConversionElectronIntensityAtomicShellQ": 0.0
+                        }
+                    ]
+                }
+            ],
+            "betaMinusDecay": [
+                {
+                    "endPointBetaMinusEnergy": 1091.0,
+                    "dEndPointBetaMinusEnergy": 16.0,
+                    "betaMinusIntensity": 2.1,
+                    "dBetaMinusIntensity": 1.1,
+                    "logFT": 4.8,
+                    "dLogFT": 2.4,
+                    "averageBetaMinusEnergy": 411.0,
+                    "dAverageBetaMinusEnergy": 7.0,
+                    "betaMinusDose": 0.008631,
+                    "dBetaMinusDose": 0.00452338921606,
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        }
+    ],
+    "decayIndex": 0
+}

@@ -1,0 +1,146 @@
+{
+    "parentID": "Mn70",
+    "parentZ": 25,
+    "parentA": 70,
+    "daughterID": "Fe70",
+    "daughterZ": 26,
+    "daughterA": 70,
+    "decayMode": "betaMinusDecay",
+    "isomer": false,
+    "parentDecayLevelEnergy": 0.0,
+    "Qvalue": 17100.0,
+    "dQvalue": 17100.0,
+    "unitEnergy": "keV",
+    "totalNumberLevels": 3,
+    "totalNumberGammas": 2,
+    "totalNumberGammaCoincidences": 1,
+    "checkNumberGammaCoincidences": 1,
+    "halfLife": [
+        {
+            "halfLifeBest": 19.9,
+            "dHalfLifeBest": 1.7,
+            "unitHalfLifeBest": "ms",
+            "halfLifeConverted": 0.019899999999999998,
+            "dHalfLifeConverted": 0.0017,
+            "unitHalfLifeConverted": "s"
+        }
+    ],
+    "normalizedBranchingRatios": [
+        {
+            "gammaEnergy": 483.0,
+            "unitEnergy": "keV",
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "levelEnergyInitial": 483.0,
+            "levelEnergyFinal": 0.0,
+            "gammaBR": 1.0,
+            "dGammaBR": 0.16129032258064516,
+            "conversionElectronBR": 0.0,
+            "dConversionElectronBR": 0.0,
+            "totalTransitionBR": 1.0,
+            "dTotalTransitionBR": 0.16129032258064516
+        },
+        {
+            "gammaEnergy": 855.0,
+            "unitEnergy": "keV",
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "levelEnergyInitial": 1338.0,
+            "levelEnergyFinal": 483.0,
+            "gammaBR": 1.0,
+            "dGammaBR": 0.13513513513513514,
+            "conversionElectronBR": 0.0,
+            "dConversionElectronBR": 0.0,
+            "totalTransitionBR": 1.0,
+            "dTotalTransitionBR": 0.13513513513513514
+        }
+    ],
+    "decaySingles": [
+        {
+            "gammaEnergy": 483.0,
+            "unitEnergy": "keV",
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "levelEnergyInitial": 483.0,
+            "levelEnergyFinal": 0.0,
+            "absoluteGammaIntensity": 15.5,
+            "dAbsoluteGammaIntensity": 2.5,
+            "internalConversionCoefficient": 0.0,
+            "dInternalConversionCoefficient": 0.0,
+            "absoluteElectronIntensity": 0.0,
+            "dAbsoluteElectronIntensity": 0,
+            "totalConvertedIntensity": 15.5,
+            "dTotalConvertedIntensity": 2.5,
+            "unitIntensity": "percent",
+            "levelIsomer": false,
+            "levelHalfLifeBest": null,
+            "dLevelHalfLifeBest": null,
+            "unitLevelHalfLifeBest": null,
+            "levelHalfLifeConverted": null,
+            "dLevelHalfLifeConverted": null,
+            "unitLevelHalfLifeConverted": null
+        },
+        {
+            "gammaEnergy": 855.0,
+            "unitEnergy": "keV",
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "levelEnergyInitial": 1338.0,
+            "levelEnergyFinal": 483.0,
+            "absoluteGammaIntensity": 18.5,
+            "dAbsoluteGammaIntensity": 2.5,
+            "internalConversionCoefficient": 0.0,
+            "dInternalConversionCoefficient": 0.0,
+            "absoluteElectronIntensity": 0.0,
+            "dAbsoluteElectronIntensity": 0,
+            "totalConvertedIntensity": 18.5,
+            "dTotalConvertedIntensity": 2.5,
+            "unitIntensity": "percent",
+            "levelIsomer": false,
+            "levelHalfLifeBest": null,
+            "dLevelHalfLifeBest": null,
+            "unitLevelHalfLifeBest": null,
+            "levelHalfLifeConverted": null,
+            "dLevelHalfLifeConverted": null,
+            "unitLevelHalfLifeConverted": null
+        }
+    ],
+    "decayCoincidences": [
+        {
+            "gammaEnergyGate": 855.0,
+            "gammaEnergyCoincidence": 483.0,
+            "unitEnergy": "keV",
+            "gammaGateLevelIndexInitial": 2,
+            "gammaGateLevelIndexFinal": 1,
+            "gammaGateLevelEnergyInitial": 1338.0,
+            "gammaGateLevelEnergyFinal": 483.0,
+            "gammaCoincidenceLevelIndexInitial": 1,
+            "gammaCoincidenceLevelIndexFinal": 0,
+            "gammaCoincidenceLevelEnergyInitial": 483.0,
+            "gammaCoincidenceLevelEnergyFinal": 0.0,
+            "absoluteCoincidenceIntensity": 18.5,
+            "dAbsoluteCoincidenceIntensity": 8.076260641666613,
+            "unitIntensity": "percent",
+            "numberParallelCascadePaths": 1,
+            "coincidenceCascadeSequences": [
+                {
+                    "pathNumber": 0,
+                    "indexedTransitionSequence": [
+                        2,
+                        1,
+                        0
+                    ]
+                }
+            ],
+            "gammaGateLevelIsomer": false,
+            "gammaGateLevelHalfLifeBest": null,
+            "dGammaGateLevelHalfLifeBest": null,
+            "unitGammaGateLevelHalfLifeBest": null,
+            "gammaGateLevelHalfLifeConverted": null,
+            "dGammaGateLevelHalfLifeConverted": null,
+            "unitGammaGateLevelHalfLifeConverted": null
+        }
+    ],
+    "decayIndex": 0,
+    "datasetID": "GG"
+}

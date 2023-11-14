@@ -1,0 +1,583 @@
+{
+    "parentID": "Re172",
+    "parentZ": 75,
+    "parentA": 172,
+    "daughterID": "W172",
+    "daughterZ": 74,
+    "daughterA": 172,
+    "decayMode": "electronCaptureBetaPlusDecay",
+    "isomer": true,
+    "parentDecayLevelEnergy": "0.0+Y",
+    "Qvalue": 7290.0,
+    "dQvalue": 460.0,
+    "unitEnergy": "keV",
+    "totalNumberLevels": 4,
+    "totalNumberGammas": 3,
+    "totalNumberKshellXrays": 6,
+    "totalNumberKshellXrayCoincidences": 18,
+    "totalNumberKshellElectronCoincidences": 3,
+    "halfLife": [
+        {
+            "halfLifeBest": 55.0,
+            "dHalfLifeBest": 5.0,
+            "unitHalfLifeBest": "s",
+            "halfLifeConverted": 55.0,
+            "dHalfLifeConverted": 5.0,
+            "unitHalfLifeConverted": "s"
+        }
+    ],
+    "bindingEnergies": [
+        {
+            "elementID": "W",
+            "atomicNumber": 74,
+            "unitEnergy": "keV",
+            "valenceElectronicConfigurationLatexString": "4f_{5/2}^{6}4f_{7/2}^{8}5d_{3/2}^{4}6s_{1/2}^{2}",
+            "KsubshellBindingEnergy": 69.525,
+            "L1subshellBindingEnergy": 12.0998,
+            "L2subshellBindingEnergy": 11.544,
+            "L3subshellBindingEnergy": 10.2068,
+            "M1subshellBindingEnergy": 2.8196,
+            "M2subshellBindingEnergy": 2.5749,
+            "M3subshellBindingEnergy": 2.281,
+            "M4subshellBindingEnergy": 1.8716,
+            "M5subshellBindingEnergy": 1.8092
+        }
+    ],
+    "valenceElectronicConfiguration": {
+        "numberValenceSubshells": 4,
+        "numberValenceElectrons": 20,
+        "valenceSubshells": [
+            {
+                "electronicSubshell": "4f",
+                "orbitalAngularMomentum": 3,
+                "spinAngularMomentum": -0.5,
+                "totalAngularMomentumRealLS": "2.5",
+                "particleNumberOccupancy": 6,
+                "particleNumberVacancies": 0,
+                "maximumOrbitalOccupancy": 6
+            },
+            {
+                "electronicSubshell": "4f",
+                "orbitalAngularMomentum": 3,
+                "spinAngularMomentum": 0.5,
+                "totalAngularMomentumRealLS": "3.5",
+                "particleNumberOccupancy": 8,
+                "particleNumberVacancies": 0,
+                "maximumOrbitalOccupancy": 8
+            },
+            {
+                "electronicSubshell": "5d",
+                "orbitalAngularMomentum": 2,
+                "spinAngularMomentum": -0.5,
+                "totalAngularMomentumRealLS": "1.5",
+                "particleNumberOccupancy": 4,
+                "particleNumberVacancies": 0,
+                "maximumOrbitalOccupancy": 4
+            },
+            {
+                "electronicSubshell": "6s",
+                "orbitalAngularMomentum": 0,
+                "spinAngularMomentum": 0.5,
+                "totalAngularMomentumRealLS": "0.5",
+                "particleNumberOccupancy": 2,
+                "particleNumberVacancies": 0,
+                "maximumOrbitalOccupancy": 2
+            }
+        ]
+    },
+    "XrayBranchingRatios": [
+        {
+            "elementID": "W",
+            "atomicNumber": 74,
+            "unitEnergy": "keV",
+            "energyKalpha1": 59.318,
+            "Kalpha1BR": 0.47,
+            "dKalpha1BR": 0.01,
+            "energyKalpha2": 57.981,
+            "Kalpha2BR": 0.27399999999999997,
+            "dKalpha2BR": 0.006,
+            "energyKalpha3": 57.425,
+            "Kalpha3BR": 0.000206,
+            "dKalpha3BR": 5.999999999999999e-06,
+            "energyKbeta1": 67.244,
+            "Kbeta1BR": 0.10300000000000001,
+            "dKbeta1BR": 0.0021,
+            "energyKbeta2": 69.067,
+            "Kbeta2BR": 0.0358,
+            "dKbeta2BR": 0.0007000000000000001,
+            "energyKbeta3": 66.95,
+            "Kbeta3BR": 0.0535,
+            "dKbeta3BR": 0.0011
+        }
+    ],
+    "totalProjectionXrays": [
+        {
+            "energyKalpha1": 59.318,
+            "intensityKalpha1": 0.0,
+            "dIntensityKalpha1": 0.0,
+            "energyKalpha2": 57.981,
+            "intensityKalpha2": 0.0,
+            "dIntensityKalpha2": 0.0,
+            "energyKalpha3": 57.425,
+            "intensityKalpha3": 0.0,
+            "dIntensityKalpha3": 0.0,
+            "energyKbeta1": 67.244,
+            "intensityKbeta1": 0.0,
+            "dIntensityKbeta1": 0.0,
+            "energyKbeta2": 69.067,
+            "intensityKbeta2": 0.0,
+            "dIntensityKbeta2": 0.0,
+            "energyKbeta3": 66.95,
+            "intensityKbeta3": 0.0,
+            "dIntensityKbeta3": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        }
+    ],
+    "gammaXraySingles": [
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 59.318,
+            "labelXrayTransition": "Kalpha1",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 57.981,
+            "labelXrayTransition": "Kalpha2",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 57.425,
+            "labelXrayTransition": "Kalpha3",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 67.244,
+            "labelXrayTransition": "Kbeta1",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 69.067,
+            "labelXrayTransition": "Kbeta2",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 66.95,
+            "labelXrayTransition": "Kbeta3",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 59.318,
+            "labelXrayTransition": "Kalpha1",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 57.981,
+            "labelXrayTransition": "Kalpha2",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 57.425,
+            "labelXrayTransition": "Kalpha3",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 67.244,
+            "labelXrayTransition": "Kbeta1",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 69.067,
+            "labelXrayTransition": "Kbeta2",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 66.95,
+            "labelXrayTransition": "Kbeta3",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 59.318,
+            "labelXrayTransition": "Kalpha1",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 57.981,
+            "labelXrayTransition": "Kalpha2",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 57.425,
+            "labelXrayTransition": "Kalpha3",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 67.244,
+            "labelXrayTransition": "Kbeta1",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 69.067,
+            "labelXrayTransition": "Kbeta2",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 66.95,
+            "labelXrayTransition": "Kbeta3",
+            "absoluteSingleIntensityContributionGammaXray": 0.0,
+            "dAbsoluteSingleIntensityContributionGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        }
+    ],
+    "gammaXrayCoincidences": [
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 59.318,
+            "labelXrayTransition": "Kalpha1",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 57.981,
+            "labelXrayTransition": "Kalpha2",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 57.425,
+            "labelXrayTransition": "Kalpha3",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 67.244,
+            "labelXrayTransition": "Kbeta1",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 69.067,
+            "labelXrayTransition": "Kbeta2",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "XrayEnergy": 66.95,
+            "labelXrayTransition": "Kbeta3",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 59.318,
+            "labelXrayTransition": "Kalpha1",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 57.981,
+            "labelXrayTransition": "Kalpha2",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 57.425,
+            "labelXrayTransition": "Kalpha3",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 67.244,
+            "labelXrayTransition": "Kbeta1",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 69.067,
+            "labelXrayTransition": "Kbeta2",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "XrayEnergy": 66.95,
+            "labelXrayTransition": "Kbeta3",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 59.318,
+            "labelXrayTransition": "Kalpha1",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 57.981,
+            "labelXrayTransition": "Kalpha2",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 57.425,
+            "labelXrayTransition": "Kalpha3",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 67.244,
+            "labelXrayTransition": "Kbeta1",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 69.067,
+            "labelXrayTransition": "Kbeta2",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "gammaEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "XrayEnergy": 66.95,
+            "labelXrayTransition": "Kbeta3",
+            "absoluteCoincidenceIntensityGammaXray": 0.0,
+            "dAbsoluteCoincidenceIntensityGammaXray": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        }
+    ],
+    "KshellElectronCoincidences": [
+        {
+            "transitionEnergy": 123.3,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "electronEnergy": 53.77499999999999,
+            "intensityContributionTransition": 0.0,
+            "dIntensityContributionTransition": 0.0,
+            "intensityContributionParticle": 0.0,
+            "dIntensityContributionParticle": 0.0,
+            "intensityContributionTotal": 0.0,
+            "dIntensityContributionTotal": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "transitionEnergy": 253.8,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "electronEnergy": 184.275,
+            "intensityContributionTransition": 0.0,
+            "dIntensityContributionTransition": 0.0,
+            "intensityContributionParticle": 0.0,
+            "dIntensityContributionParticle": 0.0,
+            "intensityContributionTotal": 0.0,
+            "dIntensityContributionTotal": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "transitionEnergy": 350.4,
+            "levelIndexInitial": 3,
+            "levelIndexFinal": 2,
+            "electronEnergy": 280.875,
+            "intensityContributionTransition": 0.0,
+            "dIntensityContributionTransition": 0.0,
+            "intensityContributionParticle": 0.0,
+            "dIntensityContributionParticle": 0.0,
+            "intensityContributionTotal": 0.0,
+            "dIntensityContributionTotal": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        }
+    ],
+    "decayIndex": 2,
+    "datasetID": "GX"
+}

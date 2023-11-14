@@ -1,0 +1,154 @@
+{
+    "parentAtomicNumber": 42,
+    "parentAtomicMass": 84,
+    "parentNeutronNumber": 42,
+    "daughterAtomicNumber": 41,
+    "daughterAtomicMass": 84,
+    "daughterNeutronNumber": 43,
+    "levelEnergyParentDecay": "0",
+    "parentID": "Mo84",
+    "daughterID": "Nb84",
+    "decayMode": "electronCaptureBetaPlusDecay",
+    "totalNumberLevels": 1,
+    "totalNumberGammas": 0,
+    "totalNumberParticleDecays": 0,
+    "decaySchemeNormalization": [
+        {
+            "normalizationRecord": [
+                {
+                    "recordExists": true,
+                    "multiplerPhotonIntensity": 1.0,
+                    "dMultiplerPhotonIntensity": 0.0,
+                    "recordExistsNR": false,
+                    "multiplerTransitionIntensity": 0.0,
+                    "dMultiplerTransitionIntensity": 0.0,
+                    "recordExistsNT": false,
+                    "multiplerBranchingRatio": 1.0,
+                    "dMultiplerBranchingRatio": 0.0,
+                    "recordExistsBR": true,
+                    "multiplerLeptonIntensity": 1.0,
+                    "dMultiplerLeptonIntensity": 0.0,
+                    "recordExistsNB": false,
+                    "multiplierDelayedParticleIntensity": 0.0,
+                    "dMultiplierDelayedParticleIntensity": 0.0,
+                    "recordExistsNP": false
+                }
+            ],
+            "productionNormalizationRecord": [
+                {
+                    "recordExists": false,
+                    "multiplierPhotonIntensityBranchingRatioCorrected": null,
+                    "dMultiplierPhotonIntensityBranchingRatioCorrected": null,
+                    "recordExistsPNR": false,
+                    "multiplierTransitionIntensityBranchingRatioCorrected": null,
+                    "dMultiplierTransitionIntensityBranchingRatioCorrected": null,
+                    "recordExistsPNT": false,
+                    "multiplierLeptonIntensityBranchingRatioCorrected": null,
+                    "dMultiplierLeptonIntensityBranchingRatioCorrected": null,
+                    "recordExistsPNB": false,
+                    "multiplierDelayedParticleIntensity": null,
+                    "dMultiplierDelayedParticleIntensity": null,
+                    "recordExistsPNP": false
+                }
+            ]
+        }
+    ],
+    "parentDecay": [
+        {
+            "parentIsIsomer": false,
+            "parentDecayLevelEnergy": 0.0,
+            "dParentDecayLevelEnergy": 0.0,
+            "parentDecayLevelEnergyIsKnown": true,
+            "parentDecayLevelEnergyThreshold": null,
+            "parentDecayLevelEnergyOffset": null,
+            "parentDecayLevelEnergyOffsetDirection": null,
+            "valueQ": 6720.0,
+            "dValueQ": 6720.0,
+            "atomicIonizationState": null,
+            "halfLife": [
+                {
+                    "halfLifeBest": 2.3,
+                    "dHalfLifeBest": 0.3,
+                    "unitHalfLifeBest": "s",
+                    "halfLifeConverted": 2.3,
+                    "dHalfLifeConverted": 0.3,
+                    "unitHalfLifeConverted": "s"
+                }
+            ],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 0.0,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ]
+        }
+    ],
+    "levelScheme": [
+        {
+            "levelIndex": 0,
+            "levelEnergy": 0.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": true,
+            "isomerDecay": [
+                {
+                    "halfLifeBest": 9.8,
+                    "dHalfLifeBest": 0.9,
+                    "unitHalfLifeBest": "s",
+                    "halfLifeConverted": 9.8,
+                    "dHalfLifeConverted": 0.9,
+                    "unitHalfLifeConverted": "s"
+                }
+            ],
+            "decayWidth": [],
+            "numberOfSpins": 3,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 1.0,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": true
+                },
+                {
+                    "spinIndex": 1,
+                    "spinReal": 2.0,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": true
+                },
+                {
+                    "spinIndex": 2,
+                    "spinReal": 3.0,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": true
+                }
+            ],
+            "numberOfGammas": 0,
+            "gammaDecay": [],
+            "betaPlusDecay": []
+        }
+    ],
+    "decayIndex": 0
+}

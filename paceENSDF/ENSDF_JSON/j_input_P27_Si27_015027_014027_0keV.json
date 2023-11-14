@@ -1,0 +1,645 @@
+{
+    "parentAtomicNumber": 15,
+    "parentAtomicMass": 27,
+    "parentNeutronNumber": 12,
+    "daughterAtomicNumber": 14,
+    "daughterAtomicMass": 27,
+    "daughterNeutronNumber": 13,
+    "levelEnergyParentDecay": "0",
+    "parentID": "P27",
+    "daughterID": "Si27",
+    "decayMode": "electronCaptureBetaPlusDecay",
+    "totalNumberLevels": 6,
+    "totalNumberGammas": 0,
+    "totalNumberParticleDecays": 5,
+    "decaySchemeNormalization": [
+        {
+            "normalizationRecord": [
+                {
+                    "recordExists": true,
+                    "multiplerPhotonIntensity": 1.0,
+                    "dMultiplerPhotonIntensity": 0.0,
+                    "recordExistsNR": true,
+                    "multiplerTransitionIntensity": 0.0,
+                    "dMultiplerTransitionIntensity": 0.0,
+                    "recordExistsNT": false,
+                    "multiplerBranchingRatio": 1.0,
+                    "dMultiplerBranchingRatio": 0.0,
+                    "recordExistsBR": true,
+                    "multiplerLeptonIntensity": 1.0,
+                    "dMultiplerLeptonIntensity": 0.5,
+                    "recordExistsNB": true,
+                    "multiplierDelayedParticleIntensity": 0.0,
+                    "dMultiplierDelayedParticleIntensity": 0.0,
+                    "recordExistsNP": false
+                }
+            ],
+            "productionNormalizationRecord": [
+                {
+                    "recordExists": false,
+                    "multiplierPhotonIntensityBranchingRatioCorrected": null,
+                    "dMultiplierPhotonIntensityBranchingRatioCorrected": null,
+                    "recordExistsPNR": false,
+                    "multiplierTransitionIntensityBranchingRatioCorrected": null,
+                    "dMultiplierTransitionIntensityBranchingRatioCorrected": null,
+                    "recordExistsPNT": false,
+                    "multiplierLeptonIntensityBranchingRatioCorrected": null,
+                    "dMultiplierLeptonIntensityBranchingRatioCorrected": null,
+                    "recordExistsPNB": false,
+                    "multiplierDelayedParticleIntensity": null,
+                    "dMultiplierDelayedParticleIntensity": null,
+                    "recordExistsPNP": false
+                }
+            ]
+        }
+    ],
+    "parentDecay": [
+        {
+            "parentIsIsomer": false,
+            "parentDecayLevelEnergy": 0.0,
+            "dParentDecayLevelEnergy": 0.0,
+            "parentDecayLevelEnergyIsKnown": true,
+            "parentDecayLevelEnergyThreshold": null,
+            "parentDecayLevelEnergyOffset": null,
+            "parentDecayLevelEnergyOffsetDirection": null,
+            "valueQ": 11668.0,
+            "dValueQ": 26.0,
+            "atomicIonizationState": null,
+            "halfLife": [
+                {
+                    "halfLifeBest": 260.0,
+                    "dHalfLifeBest": 80.0,
+                    "unitHalfLifeBest": "ms",
+                    "halfLifeConverted": 0.26,
+                    "dHalfLifeConverted": 0.08,
+                    "unitHalfLifeConverted": "s"
+                }
+            ],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 0.5,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ]
+        }
+    ],
+    "levelScheme": [
+        {
+            "levelIndex": 0,
+            "levelEnergy": 0.0,
+            "dLevelEnergy": 0.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 2.5,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 0,
+            "gammaDecay": [],
+            "betaPlusDecay": []
+        },
+        {
+            "levelIndex": 1,
+            "levelEnergy": 6626.0,
+            "dLevelEnergy": 3.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 1,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 0.5,
+                    "spinIsTentative": false,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 0,
+            "gammaDecay": [],
+            "betaPlusDecay": [
+                {
+                    "electronCaptureEnergy": 5042.0,
+                    "dElectronCaptureEnergy": 26.1725046566,
+                    "electronCaptureIntensity": 0.0,
+                    "dElectronCaptureIntensity": 0.0,
+                    "averageBetaPlusEnergy": null,
+                    "dAverageBetaPlusEnergy": null,
+                    "betaPlusIntensity": 0.0,
+                    "dBetaPlusIntensity": 0.0,
+                    "totalElectronCaptureBetaPlusIntensity": 16.0,
+                    "dTotalElectronCaptureBetaPlusIntensity": 8.0,
+                    "logFT": 3.3,
+                    "dLogFT": 1.6,
+                    "endPointBetaPlusEnergy": 4020.0,
+                    "dEndPointBetaPlusEnergy": 26.1725046566,
+                    "calculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "calculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellQ": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "sumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusQ": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellElectronCaptureFractions": [
+                        {
+                            "experimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellN": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellN": 0.0
+                        }
+                    ],
+                    "selectionRulesDeltaJ": 0,
+                    "selectionRulesDeltaPi": 1,
+                    "forbiddennessDegree": "0A",
+                    "forbiddennessClassification": "allowed",
+                    "orbitalAngularMomentum": 0
+                }
+            ]
+        },
+        {
+            "levelIndex": 2,
+            "levelEnergy": 8175.0,
+            "dLevelEnergy": 3.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 2,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 0.5,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                },
+                {
+                    "spinIndex": 1,
+                    "spinReal": 1.5,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 0,
+            "gammaDecay": [],
+            "betaPlusDecay": [
+                {
+                    "electronCaptureEnergy": 3493.0,
+                    "dElectronCaptureEnergy": 26.1725046566,
+                    "electronCaptureIntensity": 0.0,
+                    "dElectronCaptureIntensity": 0.0,
+                    "averageBetaPlusEnergy": null,
+                    "dAverageBetaPlusEnergy": null,
+                    "betaPlusIntensity": 0.0,
+                    "dBetaPlusIntensity": 0.0,
+                    "totalElectronCaptureBetaPlusIntensity": 0.003,
+                    "dTotalElectronCaptureBetaPlusIntensity": 0.0007,
+                    "logFT": 6.1,
+                    "dLogFT": 0.17,
+                    "endPointBetaPlusEnergy": 2471.0,
+                    "dEndPointBetaPlusEnergy": 26.1725046566,
+                    "calculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "calculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellQ": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "sumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusQ": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellElectronCaptureFractions": [
+                        {
+                            "experimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellN": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellN": 0.0
+                        }
+                    ],
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 3,
+            "levelEnergy": 8327.0,
+            "dLevelEnergy": 2.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 2,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 0.5,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                },
+                {
+                    "spinIndex": 1,
+                    "spinReal": 1.5,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 0,
+            "gammaDecay": [],
+            "betaPlusDecay": [
+                {
+                    "electronCaptureEnergy": 3341.0,
+                    "dElectronCaptureEnergy": 26.0768096208,
+                    "electronCaptureIntensity": 0.0,
+                    "dElectronCaptureIntensity": 0.0,
+                    "averageBetaPlusEnergy": null,
+                    "dAverageBetaPlusEnergy": null,
+                    "betaPlusIntensity": 0.0,
+                    "dBetaPlusIntensity": 0.0,
+                    "totalElectronCaptureBetaPlusIntensity": 0.032,
+                    "dTotalElectronCaptureBetaPlusIntensity": 0.001,
+                    "logFT": 4.95,
+                    "dLogFT": 0.14,
+                    "endPointBetaPlusEnergy": 2319.0,
+                    "dEndPointBetaPlusEnergy": 26.0768096208,
+                    "calculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "calculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellQ": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "sumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusQ": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellElectronCaptureFractions": [
+                        {
+                            "experimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellN": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellN": 0.0
+                        }
+                    ],
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 4,
+            "levelEnergy": 8450.0,
+            "dLevelEnergy": 2.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 2,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 0.5,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                },
+                {
+                    "spinIndex": 1,
+                    "spinReal": 1.5,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 0,
+            "gammaDecay": [],
+            "betaPlusDecay": [
+                {
+                    "electronCaptureEnergy": 3218.0,
+                    "dElectronCaptureEnergy": 26.0768096208,
+                    "electronCaptureIntensity": 0.0,
+                    "dElectronCaptureIntensity": 0.0,
+                    "averageBetaPlusEnergy": null,
+                    "dAverageBetaPlusEnergy": null,
+                    "betaPlusIntensity": 0.0,
+                    "dBetaPlusIntensity": 0.0,
+                    "totalElectronCaptureBetaPlusIntensity": 0.033,
+                    "dTotalElectronCaptureBetaPlusIntensity": 0.0,
+                    "logFT": 4.8,
+                    "dLogFT": 0.0,
+                    "endPointBetaPlusEnergy": 2196.0,
+                    "dEndPointBetaPlusEnergy": 26.0768096208,
+                    "calculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "calculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellQ": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "sumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusQ": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellElectronCaptureFractions": [
+                        {
+                            "experimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellN": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellN": 0.0
+                        }
+                    ],
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        },
+        {
+            "levelIndex": 5,
+            "levelEnergy": 9066.0,
+            "dLevelEnergy": 4.0,
+            "levelEnergyIsKnown": true,
+            "levelEnergyThreshold": null,
+            "levelEnergyOffset": null,
+            "levelEnergyOffsetDirection": null,
+            "levelIsIsomer": false,
+            "isomerDecay": [],
+            "decayWidth": [],
+            "numberOfSpins": 2,
+            "spins": [
+                {
+                    "spinIndex": 0,
+                    "spinReal": 0.5,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                },
+                {
+                    "spinIndex": 1,
+                    "spinReal": 1.5,
+                    "spinIsTentative": true,
+                    "spinIsLimit": false,
+                    "spinLimits": null,
+                    "parity": 1,
+                    "paritySign": "positive",
+                    "parityIsTentative": false
+                }
+            ],
+            "numberOfGammas": 0,
+            "gammaDecay": [],
+            "betaPlusDecay": [
+                {
+                    "electronCaptureEnergy": 2602.0,
+                    "dElectronCaptureEnergy": 26.3058928759,
+                    "electronCaptureIntensity": 0.0,
+                    "dElectronCaptureIntensity": 0.0,
+                    "averageBetaPlusEnergy": null,
+                    "dAverageBetaPlusEnergy": null,
+                    "betaPlusIntensity": 0.0,
+                    "dBetaPlusIntensity": 0.0,
+                    "totalElectronCaptureBetaPlusIntensity": 0.0023,
+                    "dTotalElectronCaptureBetaPlusIntensity": 0.0007,
+                    "logFT": 5.37,
+                    "dLogFT": 0.2,
+                    "endPointBetaPlusEnergy": 1580.0,
+                    "dEndPointBetaPlusEnergy": 26.3058928759,
+                    "calculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "calculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellK": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellL": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellM": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellN": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellO": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellP": 0.0,
+                            "calculatedElectronCaptureFractionAtomicShellQ": 0.0,
+                            "dCalculatedElectronCaptureFractionAtomicShellQ": 0.0
+                        }
+                    ],
+                    "sumCalculatedAtomicShellElectronCaptureFractions": [
+                        {
+                            "sumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusL": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusM": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusN": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusO": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusP": 0.0,
+                            "sumElectronCaptureFractionAtomicShellPlusQ": 0.0,
+                            "dSumElectronCaptureFractionAtomicShellPlusQ": 0.0
+                        }
+                    ],
+                    "experimentalAtomicShellElectronCaptureFractions": [
+                        {
+                            "experimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellK": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellL": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellM": 0.0,
+                            "experimentalElectronCaptureFractionAtomicShellN": 0.0,
+                            "dExperimentalElectronCaptureFractionAtomicShellN": 0.0
+                        }
+                    ],
+                    "selectionRulesDeltaJ": null,
+                    "selectionRulesDeltaPi": null,
+                    "forbiddennessDegree": null,
+                    "forbiddennessClassification": null,
+                    "orbitalAngularMomentum": null
+                }
+            ]
+        }
+    ],
+    "decayIndex": 0
+}

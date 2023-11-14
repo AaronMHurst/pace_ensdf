@@ -1,0 +1,31 @@
+import setuptools
+
+setuptools.setup(
+    name="paceENSDF",
+    version="0.3.1",
+    url="https://github.com/AaronMHurst/python_ensdf_decay",
+    author="Aaron M. Hurst",
+    author_email="amhurst@berkeley.edu",
+    description="Allows for interaction, manipulation, and analysis of radioactive-decay data from the ENSDF archive and corresponding coincidence gamma-gamma and gamma-X-ray emissions.",
+    #long_description=open('DESCRIPTION.rst').read(),
+    license_files=('LICENSE'),
+    long_description=open('README.md').read(),
+    #packages=setuptools.find_packages(),
+    packages=setuptools.find_namespace_packages(),
+    install_requires=["numpy", "pandas", "pytest"],
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: MacOS',
+        'Operating System :: Unix',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.7',
+        'Topic :: Scientific/Engineering :: Physics',
+    ],
+    include_package_data=True,
+    package_data={'': ['ENSDF_JSON/*.json', 'PACE_JSON/*.json',
+                       'ENSDF_RIPL/alpha/*.dat', 'ENSDF_RIPL/beta_minus/*.dat',
+                       'ENSDF_RIPL/beta_plus/*.dat', 'ENSDF_RIPL/ecbp/*.dat']},
+)

@@ -1,0 +1,153 @@
+{
+    "parentID": "C10",
+    "parentZ": 6,
+    "parentA": 10,
+    "daughterID": "B10",
+    "daughterZ": 5,
+    "daughterA": 10,
+    "decayMode": "electronCaptureBetaPlusDecay",
+    "isomer": false,
+    "parentDecayLevelEnergy": 0.0,
+    "Qvalue": 3648.0,
+    "dQvalue": 0.6,
+    "unitEnergy": "keV",
+    "totalNumberLevels": 3,
+    "totalNumberGammas": 2,
+    "totalNumberKshellXrays": 6,
+    "totalNumberKshellXrayCoincidences": 0,
+    "totalNumberKshellElectronCoincidences": 2,
+    "halfLife": [
+        {
+            "halfLifeBest": 19.29,
+            "dHalfLifeBest": 0.012,
+            "unitHalfLifeBest": "s",
+            "halfLifeConverted": 19.29,
+            "dHalfLifeConverted": 0.012,
+            "unitHalfLifeConverted": "s"
+        }
+    ],
+    "bindingEnergies": [
+        {
+            "elementID": "B",
+            "atomicNumber": 5,
+            "unitEnergy": "keV",
+            "valenceElectronicConfigurationLatexString": "2s_{1/2}^{2}2p_{1/2}^{1}",
+            "KsubshellBindingEnergy": 0.188,
+            "L1subshellBindingEnergy": 0.0126,
+            "L2subshellBindingEnergy": 0.0047,
+            "L3subshellBindingEnergy": 0.0,
+            "M1subshellBindingEnergy": 0.0,
+            "M2subshellBindingEnergy": 0.0,
+            "M3subshellBindingEnergy": 0.0,
+            "M4subshellBindingEnergy": 0.0,
+            "M5subshellBindingEnergy": 0.0
+        }
+    ],
+    "valenceElectronicConfiguration": {
+        "numberValenceSubshells": 2,
+        "numberValenceElectrons": 3,
+        "valenceSubshells": [
+            {
+                "electronicSubshell": "2s",
+                "orbitalAngularMomentum": 0,
+                "spinAngularMomentum": 0.5,
+                "totalAngularMomentumRealLS": "0.5",
+                "particleNumberOccupancy": 2,
+                "particleNumberVacancies": 0,
+                "maximumOrbitalOccupancy": 2
+            },
+            {
+                "electronicSubshell": "2p",
+                "orbitalAngularMomentum": 1,
+                "spinAngularMomentum": -0.5,
+                "totalAngularMomentumRealLS": "0.5",
+                "particleNumberOccupancy": 1,
+                "particleNumberVacancies": 1,
+                "maximumOrbitalOccupancy": 2
+            }
+        ]
+    },
+    "XrayBranchingRatios": [
+        {
+            "elementID": "B",
+            "atomicNumber": 5,
+            "unitEnergy": "keV",
+            "energyKalpha1": 0.183,
+            "Kalpha1BR": 0.0011,
+            "dKalpha1BR": 0.0005,
+            "energyKalpha2": 0.183,
+            "Kalpha2BR": 0.0005600000000000001,
+            "dKalpha2BR": 0.00023,
+            "energyKalpha3": 0.0,
+            "Kalpha3BR": 0.0,
+            "dKalpha3BR": 0.0,
+            "energyKbeta1": 0.0,
+            "Kbeta1BR": 0.0,
+            "dKbeta1BR": 0.0,
+            "energyKbeta2": 0.0,
+            "Kbeta2BR": 0.0,
+            "dKbeta2BR": 0.0,
+            "energyKbeta3": 0.0,
+            "Kbeta3BR": 0.0,
+            "dKbeta3BR": 0.0
+        }
+    ],
+    "totalProjectionXrays": [
+        {
+            "energyKalpha1": 0.183,
+            "intensityKalpha1": 3.4403632329e-05,
+            "dIntensityKalpha1": 1.563805378884435e-05,
+            "energyKalpha2": 0.183,
+            "intensityKalpha2": 1.7514576458400002e-05,
+            "dIntensityKalpha2": 7.1935087859776546e-06,
+            "energyKalpha3": 0.0,
+            "intensityKalpha3": 0.0,
+            "dIntensityKalpha3": 0.0,
+            "energyKbeta1": 0.0,
+            "intensityKbeta1": 0.0,
+            "dIntensityKbeta1": 0.0,
+            "energyKbeta2": 0.0,
+            "intensityKbeta2": 0.0,
+            "dIntensityKbeta2": 0.0,
+            "energyKbeta3": 0.0,
+            "intensityKbeta3": 0.0,
+            "dIntensityKbeta3": 0.0,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        }
+    ],
+    "gammaXraySingles": [],
+    "gammaXrayCoincidences": [],
+    "KshellElectronCoincidences": [
+        {
+            "transitionEnergy": 718.353,
+            "levelIndexInitial": 1,
+            "levelIndexFinal": 0,
+            "electronEnergy": 718.165,
+            "intensityContributionTransition": 0.0,
+            "dIntensityContributionTransition": 0.0,
+            "intensityContributionParticle": 0.03127602939,
+            "dIntensityContributionParticle": 3.270013069766784e-05,
+            "intensityContributionTotal": 0.03127602939,
+            "dIntensityContributionTotal": 3.270013069766784e-05,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        },
+        {
+            "transitionEnergy": 1021.646,
+            "levelIndexInitial": 2,
+            "levelIndexFinal": 1,
+            "electronEnergy": 1021.458,
+            "intensityContributionTransition": 0.0,
+            "dIntensityContributionTransition": 0.0,
+            "intensityContributionParticle": 0.00417083904,
+            "dIntensityContributionParticle": 1.1658097565116675e-05,
+            "intensityContributionTotal": 0.00417083904,
+            "dIntensityContributionTotal": 1.1658097565116675e-05,
+            "unitEnergy": "keV",
+            "unitIntensity": "percent"
+        }
+    ],
+    "decayIndex": 0,
+    "datasetID": "GX"
+}
