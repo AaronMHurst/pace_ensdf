@@ -1,12 +1,12 @@
 # paceENSDF: Python Archive of Coincident Emissions from ENSDF
 
-This project [[1]](#1) is a Python package providing access to, as well as manipulation and analysis methods for, the decay data from the Evaluated Nuclear Structure Data File (ENSDF) library [[2]](#2).  A total of 3226 data sets encompassing &alpha; (826), &beta;<sup>-</sup> (1124 + 6 bouble-&beta;<sup>-</sup>), and &epsilon;/&beta;<sup>+</sup> (1270) have been extracted from the ENSDF archive [[2]](#2), parsed and translated into a representative JavaScript Object Notation (JSON) format (descibed below).  The JSON-formatted data sets constitute a total of 92,782 deexcitation &gamma; rays associated with 40,638 levels.  Additionally, we also provide a Reference Input Parameter Library [[3]](#3) RIPL-translated format of the corresponding decay-scheme data.  These data sets are bundled together with the analysis toolkit.  A schematic illustrating the portion of the nuclear chart of relevance to the aforementioned decay data from ENSDF is shown in the figure below.
+This project [[1]](#1) is a Python package enabling access, manipulation, analysis and visualization of the radioactive-decay data from the Evaluated Nuclear Structure Data File (ENSDF) library [[2]](#2).  A total of 3254 data sets encompassing &alpha; (834), &beta;<sup>-</sup> (1141), and &epsilon;/&beta;<sup>+</sup> (1279) have been extracted from the ENSDF archive [[2]](#2), parsed and translated into a representative JavaScript Object Notation (JSON) format (descibed below).  The JSON-formatted data sets constitute a total of 92,264 deexcitation &gamma; rays associated with 41,094 levels.  Additionally, we also provide a Reference Input Parameter Library [[3]](#3) RIPL-translated format of the corresponding decay-scheme data.  These data sets are bundled together with the analysis toolkit.  A schematic illustrating the portion of the nuclear chart of relevance to the aforementioned decay data from ENSDF is shown in the figure below.
 
 ![ENSDF Nuclides](decay_nuclides.png?raw=true "Schematic showing portion of nuclear chart of relevance to the ENSDF-decay data sets")
 
-The `pyENSDF` package provides users with a convenient means to access and manipulate the decay data from ENSDF [[2]](#2) with various methods to return all associated nuclear structure decay-scheme data including levels, spins, parities, &gamma;-rays information, etc.  An overview of some the methods available is provided in `Jupyter` notebook distributed with this package in the `notebook` folder.
+The `paceENSDF` package provides users with a convenient means to access and manipulate the decay data from ENSDF [[2]](#2) with various methods to return all associated nuclear structure decay-scheme data including levels, spins, parities, &gamma;-rays information, etc.  The `Jupyter Notebooks` distributed with this package in the `notebook` folder provide an overview of some of the available methods.
 
-All ENSDF decay-scheme data sets containing &gamma;-ray information have also been used to generate coincidence &gamma;-&gamma; and &gamma;-*X*-ray JSON data structures from the corresponding decay data set [[1]](#1).  In addition to the coincidence energies and absolute intensities, together with uncertainties, these data structures contain additional meta data parsed from the original ENSDF data structure allowing users to search for single energies (both &gamma; and *X*-ray) as well as coincidence pairs.  Refer to the corresponding `Jupyter` notebook provided with this project to see example use cases.
+All ENSDF decay-scheme data sets containing &gamma;-ray information have also been used to generate coincidence &gamma;-&gamma; and &gamma;-*X*-ray JSON data structures from the corresponding decay data set [[1]](#1).  In addition to the coincidence energies and absolute intensities, together with uncertainties, these data structures contain additional meta data parsed from the original ENSDF data structure allowing users to search for single energies (both &gamma; and *X*-ray) as well as coincidence pairs.  Refer to the corresponding `Jupyter Notebooks` provided with this project to see example use cases.
 
 ### Notes on ENSDF quantities
 
@@ -21,8 +21,8 @@ Although most quantities in ENSDF are normally-distributed symmetrical quantitie
 This project should be built and installed by executing the `installation.sh` script at the terminal command line of the project directory:
 
 ```Bash
-$ git clone https://github.com/AaronMHurst/python_ensdf.git
-$ cd python_ensdf
+$ git clone https://github.com/AaronMHurst/pace_ensdf.git
+$ cd pace_ensdf
 $ sh installation.sh
 ```
 
@@ -38,14 +38,14 @@ This project has the following Python-package dependencies: `numpy`, `pandas`, a
 
 # Running the software
 
-After the installation the `pyENSDF` scripts can be ran from any location by importing the package and making an instance of the `ENSDF` class:
+After the installation the `paceENSDF` scripts can be ran from any location by importing the package and making an instance of the `ENSDF` class:
 
 ```Bash
 $ python
 ```
 ```python
->>> import pyENSDF as ensdf
->>> e = ensdf.ENSDF()
+>>> import paceENSDF as pe
+>>> e = pe.ENSDF()
 ```
 
 Most methods also require passing the `JSON`-formatted source data set as a list object.  To use the ENSDF decay-data sets:
@@ -54,31 +54,31 @@ Most methods also require passing the `JSON`-formatted source data set as a list
 >>> edata = e.load_ensdf()
 ```
 
-A `Jupyter` notebook is provided illustrating use of the various methods for access and manipulation of the ENSDF data.  To run the notebook from the terminal command line:
+A `Jupyter Notebook` is provided illustrating use of the various methods for access and manipulation of the ENSDF data.  To run the notebook from the terminal command line:
 
 ```Bash
 $ cd notebook
-$ jupyter notebook decay_pyENSDF.ipynb
+$ jupyter notebook decay_paceENSDF.ipynb
 ```
 
 Alternatively, To use the coincidence &gamma;-&gamma; and &gamma;-*X*-ray data sets:
 
 ```python
->>> cdata = e.load_coinc()
+>>> cdata = e.load_pace()
 ```
 
-Again, a `Jupyter` notebook is also provided illustrating use of the various methods for access and manipulation of the coincidence data:
+Again, a `Jupyter Notebook` is also provided illustrating use of the various methods for access and manipulation of the coincidence data:
 
 ```Bash
 $ cd notebook
-$ jupyter notebook coinc_pyENSDF.ipynb
+$ jupyter notebook coinc_paceENSDF.ipynb
 ```
 
 Inline plotting methods are supported in the notebooks using the `matplotlib` Python package.
 
 # Docstrings
 
-All `pyENSDF` classes and functions have supporting docstrings.  Please refer to the individual dosctrings for more information on any particular function including how to use it.  The dosctrings for each method generally have the following structure:
+All `paceENSDF` classes and functions have supporting docstrings.  Please refer to the individual dosctrings for more information on any particular function including how to use it.  The dosctrings for each method generally have the following structure:
 
 * A short explanation of the function.
 * A list and description of arguments that need to be passed to the function.
@@ -99,18 +99,18 @@ Or, to retrieve the docstring for a particular method, e.g., the callable `get_g
 
 ## RIPL format
 
-Because many nuclear reaction codes source decay-scheme information in a particular Reference Input Parameter Library (RIPL) [[3]](#3) format, representative RIPL-translated data sets have also been generated for each corresponding ENSDF-decay data set and these files are also bundled with the software.  The RIPL-formatted ENSDF-decay data sets are located in their respective `python_ensdf/pyENSDF/ENSDF_RIPL/<decay_mode>` directories, where `<decay_mode>` corresponds to `alpha`, `beta_minus`, `beta_plus`, or `ecbp`.
+Because many nuclear reaction codes source decay-scheme information in a particular Reference Input Parameter Library (RIPL) [[3]](#3) format, representative RIPL-translated data sets have also been generated for each corresponding ENSDF-decay data set and these files are also bundled with the software.  The RIPL-formatted ENSDF-decay data sets are located in their respective `pace_ensdf/paceENSDF/ENSDF_RIPL/<decay_mode>` directories, where `<decay_mode>` corresponds to `alpha`, `beta_minus`, `beta_plus`, or `ecbp`.
 
 
 ## JSON format
 
 All original ENSDF radioactive-decay data sets have been translated into a representative JavaScript Object Notation (JSON) format using an intuitive syntax to describe the quantities sourced from the primary and continuation records of the ENSDF-formatted data sets [[2]](#2).  The corresponding JSON-formatted radioative-decay data sets are bundled with this software package together with JSON-formatted coincidence $\gamma-\gamma$ and $\gamma-X$-ray data sets derived from the respective decay information in the original ENSDF library.  These JSON data structures are located in project folders:
 ```Bash
-python_ensdf/pyENSDF/ENSDF_JSON
+pace_ensdf/paceENSDF/ENSDF_JSON
 ```
 for the radioactive-decay data sets, and
 ```Bash
-python_ensdf/pyENSDF/COINC_JSON
+pace_ensdf/paceENSDF/COINC_JSON
 ```
 for the coincidence data sets.
 
@@ -123,7 +123,7 @@ The JSON data structures support the following data types:
 * *object* (JSON object)
 * *array*
 
-The JSON-formatted schemas for (1) the interpretted [ENSDF decay](https://github.com/AaronMHurst/python_ensdf#1-json-formatted-ensdf-decay-schema) datasets, and (2) the derived coincidence [&gamma;-&gamma;](https://github.com/AaronMHurst/python_ensdf#2-json-formatted-coincidence-%CE%B3-%CE%B3-schema) and (3) [&gamma;-*X*-ray](https://github.com/AaronMHurst/python_ensdf#3-json-formatted-coincidence-%CE%B3-x-ray-schema) datasets are described below.
+The JSON-formatted schemas for (1) the interpretted [ENSDF decay](https://github.com/AaronMHurst/pace_ensdf#1-json-formatted-ensdf-decay-schema) datasets, and (2) the derived coincidence [&gamma;-&gamma;](https://github.com/AaronMHurst/pace_ensdf#2-json-formatted-coincidence-%CE%B3-%CE%B3-schema) and (3) [&gamma;-*X*-ray](https://github.com/AaronMHurst/pace_ensdf#3-json-formatted-coincidence-%CE%B3-x-ray-schema) datasets are described below.
 
 ## (1) JSON-formatted ENSDF-decay schema
 
@@ -199,10 +199,10 @@ The JSON arrays are described below:
 | `"parentIsIsomer"`| A boolean type to indicate isomeric decay.|
 | `"parentDecayLevelEnergy"`| A number type<sup>*</sup> (float or integer) corresponding to the excitation energy associated with the decay of the parent.|
 | `"dParentDecayLevelEnergy"`| A number type (float or integer) corresponding to the associated uncertainty of parent-decay excitation energy.|
-| `"parentDecayLevelEnergyIsKnown"`| A boolean type<sup>*</sup> to indicate whether or not the parent-decay level energy is known.|
-| `"parentDecayLevelEnergyThreshold"`| If `"parentDecayLevelEnergyIsKnown": true` the value is a `null` type.  Otherwise number or string type values are allowed.|
-| `"parentDecayLevelEnergyOffset"`|
-| `"parentDecayLevelEnergyOffsetDirection"`|
+| `"parentDecayLevelEnergyIsKnown"`| A boolean type<sup>**</sup> to indicate whether or not the parent-decay level energy is known.|
+| `"parentDecayLevelEnergyThreshold"`| If `"parentDecayLevelEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise number or string type values are allowed.|
+| `"parentDecayLevelEnergyOffset"`| If `"parentDecayLevelEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise number or string type values are allowed.|
+| `"parentDecayLevelEnergyOffsetDirection"`| If `"parentDecayLevelEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise `"positive"` (e.g., in the case of `"parentDecayLevelEnergy": "0.0 + X"`) or `"negative"` values are acceptable to denote the offset direction.|
 | `"valueQ"`| A number type (float or integer) corresponding to the ground-state *Q* value, i.e., the total energy available for the ground-state to ground-state transition.|
 | `"dValueQ"`| A number type (float or integer) corresponding to the associated uncertainty of the ground-state *Q* value.|
 | `"atomicIonizationState"`| If given it will be a signed number type (integer) describing the ionization state for ionized-atomic decay, otherwise it will be a `null` type.|
@@ -210,6 +210,9 @@ The JSON arrays are described below:
 | `"decayWidth"`| An array type containing the decay-width information for the parent isotope or isomer.|
 | `"numberOfSpins"`| A number type (integer) corresponding to the number of spin-parity permutations of the level.|
 | `"spins"`| An array type corresponding to the spin-parity information associated with the level.|
+
+<sup>*</sup> For real numerical data the value will be a number type (float or integer); level energies expressed as, e.g., `0.0 + X` or similar, will be represented as a string type.
+<sup>**</sup> If `"parentDecayLevelEnergy" : <number>`: `"parentDecayLevelEnergyIsKnown" : true`, else if `"parentDecayLevelEnergy" : <string>`: `"parentDecayLevelEnergyIsKnown" : false`.
 
 #### 1.2.1 `"halfLife"` array
 
@@ -240,12 +243,12 @@ The JSON arrays are described below:
 | JSON key | Explanation |
 | --- | --- |
 | `"levelIndex"` | A number type (integer) corresponding to unique index associated with an energy level. |
-| `"levelEnergy"` | A number type (float) corresponding to the level excitation energy. |
+| `"levelEnergy"` | A number type<sup>*</sup> (float) corresponding to the level excitation energy. |
 | `"dLevelEnergy"` | A number type (float) corresponding to the uncertainty of the level excitation energy. |
-| `"levelEnergyIsKnown"` |
-| `"levelEnergyThreshold"` |
-| `"levelEnergyOffset"` |
-| `"levelEnergyOffsetDirection"` |
+| `"levelEnergyIsKnown"` | A boolean type<sup>**</sup> to indicate whether or not the level energy is known.|
+| `"levelEnergyThreshold"` | If `"levelEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise number or string type values are allowed.|
+| `"levelEnergyOffset"` | If `"levelEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise number or string type values are allowed.|
+| `"levelEnergyOffsetDirection"` | If `"levelEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise `"positive"` (e.g., in the case of `"levelEnergy": "0.0 + X"`) or `"negative"` values are acceptable to denote the offset direction.|
 | `"levelIsIsomer"` | A boolean type to flag levels with isomeric properties. |
 | `"isomerDecay"` | An array type corresponding to the isomer-decay properties of the level. |
 | `"decayWidth"` | An array type corresponding to the decay-width properties of the level. |
@@ -256,6 +259,9 @@ The JSON arrays are described below:
 | `"alphaDecay"` | An array type containing JSON objects associated with the &alpha;-decay properties of the level.  *Only populated in &alpha;-decay datasets.* |
 | `"betaMinusDecay"` | An array type containing JSON objects associated with the &beta;<sup>-</sup>-decay properties of the level.  *Only populated in &beta;<sup>-</sup>-decay datasets.* |
 | `"betaPlusDecay"` | An array type containing JSON objects associated with the &epsilon;/&beta;<sup>+</sup>-decay properties of the level.  *Only populated in &epsilon;/&beta;<sup>+</sup>-decay datasets.* |
+
+<sup>*</sup> For real numerical data the value will be a number type (float or integer); level energies expressed as, e.g., `0.0 + X` or similar, will be represented as a string type.
+<sup>**</sup> If `"levelEnergy" : <number>`: `"levelEnergyIsKnown" : true`, else if `"levelEnergy" : <string>`: `"levelEnergyIsKnown" : false`.
 
 #### 1.3.1 `"isomerDecay"` array
 
@@ -286,7 +292,7 @@ Generally, the JSON structures for each level contain an empty `"decayWidth"` ar
 
 #### 1.3.3 `"spins"` array
 
-The same JSON keys in the [`"spins"`](https://github.com/AaronMHurst/python_ensdf#122-spins-array) array belonging to the `"parentDecay"` array are used to describe the `"spins"` array for each level.  These keys are again described explicitly as:
+The same JSON keys in the [`"spins"`](https://github.com/AaronMHurst/pace_ensdf#122-spins-array) array belonging to the `"parentDecay"` array are used to describe the `"spins"` array for each level.  These keys are again described explicitly as:
 
 | JSON key | Explanation |
 | --- | --- |
@@ -306,17 +312,17 @@ The calculated internal-conversion coefficients in this array were determined us
 
 | JSON key | Explanation |
 | --- | --- |
-| `"gammaEnergy"` | A number type (float) corresponding to the &gamma;-ray energy.|
+| `"gammaEnergy"` | A number type<sup>*</sup> (float) corresponding to the &gamma;-ray energy.|
 | `"dGammaEnergy"` | A number type (float) corresponding to the associated uncertainty of the &gamma;-ray energy.|
-| `"gammaEnergyIsKnown"` |
-| `"gammaEnergyThreshold"` |
-| `"gammaEnergyOffset"` |
-| `"gammaEnergyOffsetDirection"` |
+| `"gammaEnergyIsKnown"` | A boolean type<sup>**</sup> to indicate whether or not the &gamma;-ray energy is known.|
+| `"gammaEnergyThreshold"` | If `"gammaEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise number or string type values are allowed.|
+| `"gammaEnergyOffset"` | If `"gammaEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise number or string type values are allowed.|
+| `"gammaEnergyOffsetDirection"` | If `"gammaEnergyIsKnown": true` the corresponding value is a `null` type.  Otherwise `"positive"` (e.g., in the case of `"gammaEnergy": "0.0 + X"`) or `"negative"` values are acceptable to denote the offset direction.|
 | `"levelIndexInitial"` | A number type (integer) corresponding to the index of the initial level associated with the &gamma;-ray transition.|
 | `"levelIndexFinal"` | A number type (integer) corresponding to the index of the final level associated with the &gamma;-ray transition.|
 | `"levelEnergyInitial"` | A number type (float) corresponding to the excitation energy of the initial level associated with the &gamma;-ray transition.|
 | `"levelEnergyFinal"` | A number type (float) corresponding to the excitation energy of the final level associated with the &gamma;-ray transition.|
-| `"gammaIntensity"` | A number type (float) corresponding to the *raw* &gamma;-ray intensity parsed from the ENSDF file, i.e., the &gamma;-ray intensity prior to any application of [normalization](https://github.com/AaronMHurst/python_ensdf#11-decayschemenormalization-array) factors.|
+| `"gammaIntensity"` | A number type (float) corresponding to the *raw* &gamma;-ray intensity parsed from the ENSDF file, i.e., the &gamma;-ray intensity prior to any application of [normalization](https://github.com/AaronMHurst/pace_ensdf#11-decayschemenormalization-array) factors.|
 | `"dGammaIntensity"` | A number type (float) corresponding to the associated uncertainty of the &gamma;-ray intensity.|
 |  `"multipolarity"` | A string type (or *null*) describing the multipolarity (*"M1", "E1", "M2", "E2", "M1+E2",* etc.) of the &gamma;-ray transition.|
 |  `"multipolarityIsTentative"`| A boolean type to flag tentative multipolarity assignments.|
@@ -331,6 +337,9 @@ The calculated internal-conversion coefficients in this array were determined us
 | `"conversionElectronIntensityAtomicShellToTotalRatios"` | An array type containing the atomic subshell internal-conversion electron intensity to total ratios.|
 | `"experimentalAtomicShellConversionCoefficients"` | An array type containing the experimental atomic subshell internal-conversion coefficient data.|
 | `"atomicShellConversionElectronIntensities"` | An array type containing the atomic subshell internal-conversion electron intensities.|
+
+<sup>*</sup> For real numerical data the value will be a number type (float or integer); &gamma;-ray energies expressed as, e.g., `0.0 + X` or similar, will be represented as a string type.
+<sup>**</sup> If `"gammaEnergy" : <number>`: `"gammaEnergyIsKnown" : true`, else if `"gammaEnergy" : <string>`: `"gammaEnergyIsKnown" : false`.
 
 ##### 1.3.4.1 `"calculatedAtomicShellConversionCoefficients"` array
 
@@ -391,7 +400,7 @@ where $\Gamma_{\gamma}$ is the $\gamma$-ray transition intensity, $\Gamma_{e}$ i
 \alpha_{K} = \left[\frac{\Gamma_{e_{K}} }{\Gamma_{\gamma}(1+\alpha)}\right](1+\alpha). \quad\quad\quad (2)
 ```
 
-Provided that both the ratio in Eq. (2) above along with  $\alpha$ are available we can also use this information to deduce $\alpha_{i}$ values where $i$ represents the $K, L, M,\dots$ atomic subshell.  In certain cases where this ratio is parsed from the source ENSDF dataset we have used this method deduce the corresponding $\alpha_{i}$ and populate the [`"calculatedAtomicShellConversionCoefficients"`](https://github.com/AaronMHurst/python_ensdf#1341-calculatedatomicshellconversioncoefficients-array) array.
+Provided that both the ratio in Eq. (2) above along with  $\alpha$ are available we can also use this information to deduce $\alpha_{i}$ values where $i$ represents the $K, L, M,\dots$ atomic subshell.  In certain cases where this ratio is parsed from the source ENSDF dataset we have used this method deduce the corresponding $\alpha_{i}$ and populate the [`"calculatedAtomicShellConversionCoefficients"`](https://github.com/AaronMHurst/pace_ensdf#1341-calculatedatomicshellconversioncoefficients-array) array.
 
 
 | JSON key | Explanation |
@@ -484,9 +493,9 @@ This array will only be present in the data structure and populated when `"decay
 | `"dBetaMinusDose"`              |
 | `"selectionRulesDeltaJ"`        | A number type (integer) corresponding to the difference in spin values between initial and final states associated with the &beta;<sup>-</sup> transition; $\Delta J = \|J_{i} - J_{f}\|$.|
 | `"selectionRulesDeltaPi"`       | A number type (integer) to indicate parity changes between initial and final states associated with the &beta;<sup>-</sup> transition; $\Delta \pi = \pi_{i} \pi_{f}$.  Change in parity $\pi = -1$; no change in parity $\pi = 1$.|
-| `"forbiddennessDegree"`         | A string type representing the forbiddenness degree associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/python_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
-| `"forbiddennessClassification"` | A string type representing the forbiddenness classification associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/python_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
-| `"orbitalAngularMomentum"`      | A number type (integer) representing the orbital angular momentum quantum number associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/python_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
+| `"forbiddennessDegree"`         | A string type representing the forbiddenness degree associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/pace_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
+| `"forbiddennessClassification"` | A string type representing the forbiddenness classification associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/pace_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
+| `"orbitalAngularMomentum"`      | A number type (integer) representing the orbital angular momentum quantum number associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/pace_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
 
 
 
@@ -515,9 +524,9 @@ This array will only be present in the data structure and populated when `"decay
 | `"experimentalAtomicShellElectronCaptureFractions"`  | An array type containing the experimentally-measured fraction of decay by electron capture for the atomic subshells.|
 | `"selectionRulesDeltaJ"` | A number type (integer) corresponding to the difference in spin values between initial and final states associated with the &beta;<sup>-</sup> transition; $\Delta J = \|J_{i} - J_{f}\|$.|
 | `"selectionRulesDeltaPi"` | A number type (integer) to indicate parity changes between initial and final states associated with the &beta;<sup>-</sup> transition; $\Delta \pi = \pi_{i} \pi_{f}$.  Change in parity $\pi = -1$; no change in parity $\pi = 1$.|
-| `"forbiddennessDegree"` | A string type representing the forbiddenness degree associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/python_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
-| `"forbiddennessClassification"` | A string type representing the forbiddenness classification associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/python_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
-| `"orbitalAngularMomentum"` | A number type (integer) representing the orbital angular momentum quantum number associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/python_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
+| `"forbiddennessDegree"` | A string type representing the forbiddenness degree associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/pace_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
+| `"forbiddennessClassification"` | A string type representing the forbiddenness classification associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/pace_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
+| `"orbitalAngularMomentum"` | A number type (integer) representing the orbital angular momentum quantum number associated with the &beta;<sup>-</sup> transition.  Refer to [table](https://github.com/AaronMHurst/pace_ensdf#allowed-and-forbidden-transitions-in-%CE%B2-decay) of forbidden/allowed classifications.|
 
 ##### 1.3.7.1 `"calculatedAtomicShellElectronCaptureFractions"` array
 
@@ -622,7 +631,7 @@ Here, $\Delta J = \|J_{i} - J_{f}\|$ and $\Delta \pi = \pi_{i} \pi_{f}$, where $
 
 ### 2.1 `"halfLife"` array
 
-This array contains the same data types as described for other parts in the schema in [1.2.1 `"halfLife"` array](https://github.com/AaronMHurst/python_ensdf/tree/main#121-halflife-array) and [1.3.1 `"isomerDecay"` array](https://github.com/AaronMHurst/python_ensdf/tree/main#131-isomerdecay-array), explicitly:
+This array contains the same data types as described for other parts in the schema in [1.2.1 `"halfLife"` array](https://github.com/AaronMHurst/pace_ensdf/tree/main#121-halflife-array) and [1.3.1 `"isomerDecay"` array](https://github.com/AaronMHurst/pace_ensdf/tree/main#131-isomerdecay-array), explicitly:
 
 | JSON key | Explanation |
 | --- | --- |
@@ -657,7 +666,7 @@ The normalized branching ratios presented in this data structure are defined and
 
 ### 2.3 `"decaySingles"` array
 
-This array contains [normalized](https://github.com/AaronMHurst/python_ensdf/tree/main#11-decayschemenormalization-array) absolute intensities associated with the &gamma;-ray and conversion-electron transitions.
+This array contains [normalized](https://github.com/AaronMHurst/pace_ensdf/tree/main#11-decayschemenormalization-array) absolute intensities associated with the &gamma;-ray and conversion-electron transitions.
 
 | JSON key | Explanation |
 | --- | --- |
@@ -761,7 +770,7 @@ Many of the data types are common to both the &gamma;-&gamma; and &gamma;-*X*-ra
 
 ### 3.1 `"halfLife"` array
 
-This array contains identical key-value pairs to those in the corresponding [&gamma;-&gamma; JSON data structure](https://github.com/AaronMHurst/python_ensdf/tree/main#21-halflife-array).
+This array contains identical key-value pairs to those in the corresponding [&gamma;-&gamma; JSON data structure](https://github.com/AaronMHurst/pace_ensdf/tree/main#21-halflife-array).
 
 | JSON key | Explanation |
 | --- | --- |
