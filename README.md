@@ -212,6 +212,7 @@ The JSON arrays are described below:
 | `"spins"`| An array type corresponding to the spin-parity information associated with the level.|
 
 <sup>*</sup> For real numerical data the value will be a number type (float or integer); level energies expressed as, e.g., `0.0 + X` or similar, will be represented as a string type.
+
 <sup>**</sup> If `"parentDecayLevelEnergy" : <number>`: `"parentDecayLevelEnergyIsKnown" : true`, else if `"parentDecayLevelEnergy" : <string>`: `"parentDecayLevelEnergyIsKnown" : false`.
 
 #### 1.2.1 `"halfLife"` array
@@ -261,6 +262,7 @@ The JSON arrays are described below:
 | `"betaPlusDecay"` | An array type containing JSON objects associated with the &epsilon;/&beta;<sup>+</sup>-decay properties of the level.  *Only populated in &epsilon;/&beta;<sup>+</sup>-decay datasets.* |
 
 <sup>*</sup> For real numerical data the value will be a number type (float or integer); level energies expressed as, e.g., `0.0 + X` or similar, will be represented as a string type.
+
 <sup>**</sup> If `"levelEnergy" : <number>`: `"levelEnergyIsKnown" : true`, else if `"levelEnergy" : <string>`: `"levelEnergyIsKnown" : false`.
 
 #### 1.3.1 `"isomerDecay"` array
@@ -339,6 +341,7 @@ The calculated internal-conversion coefficients in this array were determined us
 | `"atomicShellConversionElectronIntensities"` | An array type containing the atomic subshell internal-conversion electron intensities.|
 
 <sup>*</sup> For real numerical data the value will be a number type (float or integer); &gamma;-ray energies expressed as, e.g., `0.0 + X` or similar, will be represented as a string type.
+
 <sup>**</sup> If `"gammaEnergy" : <number>`: `"gammaEnergyIsKnown" : true`, else if `"gammaEnergy" : <string>`: `"gammaEnergyIsKnown" : false`.
 
 ##### 1.3.4.1 `"calculatedAtomicShellConversionCoefficients"` array
