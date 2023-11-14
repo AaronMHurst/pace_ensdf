@@ -2,11 +2,11 @@ import setuptools
 
 setuptools.setup(
     name="paceENSDF",
-    version="0.3.1",
-    url="https://github.com/AaronMHurst/python_ensdf_decay",
+    version="0.4.0",
+    url="https://github.com/AaronMHurst/pace_ensdf",
     author="Aaron M. Hurst",
     author_email="amhurst@berkeley.edu",
-    description="Allows for interaction, manipulation, and analysis of radioactive-decay data from the ENSDF archive and corresponding coincidence gamma-gamma and gamma-X-ray emissions.",
+    description="paceENSDF: Python Archive of Coincident Emissions from ENSDF.  Package enables interaction, manipulation, analysis, and visualization of radioactive-decay data from the ENSDF archive and corresponding coincidence gamma-gamma and gamma-X-ray emissions.",
     #long_description=open('DESCRIPTION.rst').read(),
     license_files=('LICENSE'),
     long_description=open('README.md').read(),
