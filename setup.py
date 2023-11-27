@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="paceENSDF",
-    version="0.4.0",
+    version="0.5.0",
     url="https://github.com/AaronMHurst/pace_ensdf",
     author="Aaron M. Hurst",
     author_email="amhurst@berkeley.edu",
