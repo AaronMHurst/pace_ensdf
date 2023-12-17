@@ -486,10 +486,7 @@ class GammaGamma(Alpha):
         elif len(args) == 5 and NUM_ARGS_OK == True and DAUGHTER_EXISTS == True and COINCIDENCE == True:
             return sorted(coinc_list)
         else:
-            return
-            
-
-
+            return            
 
 
 
@@ -733,7 +730,7 @@ class GammaGamma(Alpha):
                 raise
 
 
-    def show_cascades(self, list, str1, str2, index, int1, int2, int3, int4):
+    def show_cascades(self, list, str1, str2, index, int1, int2, int3, int4, quiet=False):
         """Displays the gamma-ray cascades for each parallel path between a 
         coincident pair of gamma rays in the decay scheme of the daughter 
         nucleus populated following radioactive decay.
@@ -843,12 +840,14 @@ class GammaGamma(Alpha):
                                         gamma_coinc = each_n["gammaEnergy"]
                                         Ei_coinc_energy = each_n["levelEnergyInitial"]
                                         Ef_coinc_energy = each_n["levelEnergyFinal"]
-
-                    print("Cascade sequence between coincidence gammas: g({0} keV)-g({1} keV): \ng({2} [{3} keV] -> {4} [{5} keV]) - g({6} [{7} keV] -> {8} [{9} keV])\n".format(gamma_gate,gamma_coinc,Ei_gate,Ei_gate_energy,Ef_gate,Ef_gate_energy,Ei_coinc,Ei_coinc_energy,Ef_coinc,Ef_coinc_energy))
+                                        
+                    if quiet == False:
+                        print("Cascade sequence between coincidence gammas: g({0} keV)-g({1} keV): \ng({2} [{3} keV] -> {4} [{5} keV]) - g({6} [{7} keV] -> {8} [{9} keV])\n".format(gamma_gate,gamma_coinc,Ei_gate,Ei_gate_energy,Ef_gate,Ef_gate_energy,Ei_coinc,Ei_coinc_energy,Ef_coinc,Ef_coinc_energy))
                     
                     for p,casc in enumerate(cascade):
                         #print(casc)
-                        print("Path number {0}:".format(p+1))
+                        if quiet == False:
+                            print("Path number {0}:".format(p+1))
                         list_gt = []
                         for i,v in enumerate(range(len(casc))):
                             #print(casc[v])
@@ -865,8 +864,9 @@ class GammaGamma(Alpha):
                                                         gamma_cascade = each_n["gammaEnergy"]
                                                         Ei_cascade = each_n["levelEnergyInitial"]
                                                         Ef_cascade = each_n["levelEnergyFinal"]
-                                    
-                                    print("Transition sequence: {0} -> {1}: g({2} keV) [{3} keV -> {4} keV]".format(casc[v],casc[u],gamma_cascade,Ei_cascade,Ef_cascade))
+
+                                    if quiet == False:
+                                        print("Transition sequence: {0} -> {1}: g({2} keV) [{3} keV -> {4} keV]".format(casc[v],casc[u],gamma_cascade,Ei_cascade,Ef_cascade))
                                     list_gt.append((casc[v],casc[u]))
                         list_gamma_tuples.append(list_gt)
                         print()
@@ -877,3 +877,609 @@ class GammaGamma(Alpha):
                         print("No gamma cascades observed.")
                         return
                     
+
+
+
+    def get_gg_timecut_USER(self, list, str, *args):
+        """Gamma/gamma coincidence data with imposed timecut for: (i) a given 
+        decay scheme (defined by parent nucleus), or (ii) a particular 
+        transition within a given decay scheme (defined by parent nucleus and 
+        transition indices associated with the decay of the daughter nucleus).
+
+        Arguments:
+            list: A list of coincidence-data JSON objects.
+            str: A string object describing the decay mode:
+                  "BM": Beta-minus decay;
+                  "ECBP": Electron-capture/beta-plus decay;
+                  "A": Alpha decay.
+            args: Takes either 3 or 5 additional arguments:
+
+                  (i) If 2 args are given:
+                  parent: A string object describing the parent ID must be given
+                          as the first argument.
+                  index: An integer object associated with the decay index of 
+                         the parent state is to be given as the second argument,
+                         where:
+                         0: Ground-state decay;
+                         >= 1: Isomer decay.
+                  timecut: A float object to define timecut.  Must be given in 
+                           units of [s] where values:
+                           > 0: returns coincidences where level associated with
+                                gamma-gate transition is longer-lived than 
+                                imposed timecut.
+                           < 0: returns coincidences where level associated with
+                                gamma-gate transition is shorter-lived than 
+                                imposed timecut.
+
+                  (ii) If 4 args are given:
+                  parent: A string object describing the parent ID must be given
+                          as the first argument.
+                  index: An integer object associated with the decay index of 
+                         the parent state is to be given as the second argument,
+                         where:
+                         0: Ground-state decay;
+                         >= 1: Isomer decay.
+                  level_i: An integer object corresponding to the initial level 
+                           index associated with the gamma decay passed as the
+                           third argument.
+                  level_f: An integer object corresponding to the final level 
+                           index associated with the gamma decay passed as the 
+                           fourth argument.
+                  timecut: A float object to define timecut.  Must be given in 
+                           units of [s] where values:
+                           > 0: returns coincidences where level associated with
+                                gamma-gate transition is longer-lived than 
+                                imposed timecut.
+                           < 0: returns coincidences where level associated with
+                                gamma-gate transition is shorter-lived than 
+                                imposed timecut.
+        
+        Returns:
+            A list of lists containing coincident gammas and X rays.  The list 
+            elements in each sublist correspond to:
+
+            [0]: Gamma-ray energy gate (float);
+            [1]: Coincident gamma-ray energy (float);
+            [2]: Associated initial level index of gamma gate (int);
+            [3]: Associated final level index of gamma gate (int);
+            [4]: Associated initial level energy of gamma gate (float);
+            [5]: Associated final level energy of gamma gate (float);
+            [6]: Associated initial level index of coincident gamma (int);
+            [7]: Associated final level index of coincident gamma (int);
+            [8]: Associated initial level energy of coincident gamma (float);
+            [9]: Associated final level energy of coincident gamma (float);
+            [10]: Absolute gamma/gamma coincident intensity (float);
+            [11]: Coincident-intensity uncertainty (float);
+            [12]: Halflife in units of [s] related to initial level associated 
+                  with gamma-gate transition (float);
+            [13]: Associated uncertainty of halflife in units of [s] related to 
+                  initial level associated with gamma-gate transition (float).
+
+        Examples:
+            (i) All coincidences in 67Zn following electron-capture/beta-plus 
+            decay of 67Ga in its ground state assuming timecut < 1 ns (1E-09 s):
+
+            get_gg_timecut(cdata, "ECBP", "Ga67", 0, -1e-09)
+
+            (ii) All transitions in coincidence with the 1->0 transition in 
+            67Zn following electron-capture/beta-plus decay of 67Ga in its 
+            ground state assuming timecut < 1 ns (1E-09 s):
+
+            get_gg_timecut(cdata, "ECBP", "Ga67", 0, 1, 0, -1e-09)
+
+            (iii) All coincidences in 67Zn following electron-capture/beta-plus
+            decay of 67Ga in its ground state assuming timecut > 0.5 ns 
+            (5E-10 s):
+
+            get_gg_timecut(cdata, "ECBP", "Ga67", 0, 5e-10)
+
+            (ii) All transitions in coincidence with the 1->0 transition in 
+            67Zn following electron-capture/beta-plus decay of 67Ga in its 
+            ground state assuming timecut > 0.5 ns (5E-10 s):
+
+            get_gg_timecut(cdata, "ECBP", "Ga67", 0, 1, 0, 5e-10)
+        """
+        self.list = list
+        self.str = str
+        NUM_ARGS_OK = False
+        coinc_list = []
+        DAUGHTER_EXISTS = False
+        COINCIDENCE = False
+        gg = GammaGamma()
+        if len(args) == 3:
+            #try:
+            #    pid = str(args[0])
+            #    decay_index = int(args[1])
+            #except TypeError:
+            #    pid = str(args[1])
+            #    decay_index = int(args[0])
+            NUM_ARGS_OK = True
+            pid = args[0]
+            decay_index = args[1]
+            timecut = args[2]
+
+            decay_mode = BaseENSDF.check_decay(self.str)
+            if decay_mode == None:
+                print("Invalid decay mode.")
+                return
+            else:
+                #coinc_list = []
+                #DAUGHTER_EXISTS = False
+                for jdict in self.list:
+                    if jdict["datasetID"] == "GG":
+                        if jdict["parentID"] == pid and jdict["decayMode"] == decay_mode and jdict["decayIndex"] == decay_index:
+                            DAUGHTER_EXISTS = True
+                            for each_c in jdict["decayCoincidences"]:
+                                if timecut >= 0:
+                                    #if each_c["gammaGateLevelIsomer"] == True and each_c["gammaGateLevelHalfLifeConverted"] > abs(timecut):
+                                    
+                                    gamma_gate = each_c["gammaEnergyGate"]
+                                    gamma_coinc = each_c["gammaEnergyCoincidence"]
+                                
+                                    gate_index_i = each_c["gammaGateLevelIndexInitial"]
+                                    gate_index_f = each_c["gammaGateLevelIndexFinal"]
+                                    gate_level_i = each_c["gammaGateLevelEnergyInitial"]
+                                    gate_level_f = each_c["gammaGateLevelEnergyFinal"]
+                                
+                                    coinc_index_i = each_c["gammaCoincidenceLevelIndexInitial"]
+                                    coinc_index_f = each_c["gammaCoincidenceLevelIndexFinal"]
+                                    coinc_level_i = each_c["gammaCoincidenceLevelEnergyInitial"]
+                                    coinc_level_f = each_c["gammaCoincidenceLevelEnergyFinal"]
+
+                                    # Need to recalculate coincidence intensities to removes cascades that go through the isomer and don't satisfy imposed timecut
+                                        
+                                    #abs_coinc_intensity = each_c["absoluteCoincidenceIntensity"] # COMMENT OUT LATER
+                                    #d_abs_coinc_intensity = each_c["dAbsoluteCoincidenceIntensity"] # COMMENT OUT LATER
+
+                                    # Not sure if we still need this info?
+                                    ilevel_gammagate_halflife = each_c["gammaGateLevelHalfLifeConverted"]
+                                    d_ilevel_gammagate_halflife = each_c["dGammaGateLevelHalfLifeConverted"]
+
+                                    # Call the `show_cascades` method to figure out cascade
+                                    print(type(self.list),decay_mode,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f)
+                                    #gg = GammaGamma()
+                                    casc = gg.show_cascades(self.list,self.str,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f,True)
+
+                                    surviving_paths = []
+                                    for i,p in enumerate(casc):
+                                        #PATH_KILLER = False
+                                        HITS_ISOMER = False
+                                        for c in casc[i]:
+                                            #print(c)
+                                            Ei = c[0]
+                                            Ef = c[1]
+                                            for each_d in jdict["decaySingles"]:
+                                                if Ei == int(each_d["levelIndexInitial"]) and Ef == int(each_d["levelIndexFinal"]):
+                                                    if each_d["levelIsomer"] == True and each_d["levelHalfLifeConverted"] is not None:
+                                                        if float(each_d["levelHalfLifeConverted"]) > abs(timecut):
+                                                            print(Ei,"->",Ef)
+                                                            HITS_ISOMER = True
+                                                        #else:
+                                                        #    PATH_KILLER = True
+
+                                        #if HITS_ISOMER == False:
+                                        #    PATH_KILLER = True
+                                        #if PATH_KILLER == False:
+                                        if HITS_ISOMER == True:
+                                            surviving_paths.append(casc[i])
+                                    if len(surviving_paths) > 0:
+                                        #print(surviving_paths)
+                                        #ci_dci = gg.recalculate_ci(self.surviving_paths)
+                                        ci_dci = gg.recalculate_ci(self.list, decay_mode, pid, decay_index, surviving_paths)
+                                        #print("TI: ",ci_dci[0])
+                                        #print("DTI: ",ci_dci[1])
+                                        abs_coinc_intensity = ci_dci[0]
+                                        d_abs_coinc_intensity = ci_dci[1]
+                                                        
+                                        coinc_list.append([gamma_gate, gamma_coinc, gate_index_i, gate_index_f, gate_level_i, gate_level_f, coinc_index_i, coinc_index_f, coinc_level_i, coinc_level_f, abs_coinc_intensity, d_abs_coinc_intensity, ilevel_gammagate_halflife, d_ilevel_gammagate_halflife])
+
+                                elif timecut < 0:
+                                    #if each_c["gammaGateLevelIsomer"] == False or each_c["gammaGateLevelHalfLifeConverted"] < abs(timecut):
+
+                                    gamma_gate = each_c["gammaEnergyGate"]
+                                    gamma_coinc = each_c["gammaEnergyCoincidence"]
+                                
+                                    gate_index_i = each_c["gammaGateLevelIndexInitial"]
+                                    gate_index_f = each_c["gammaGateLevelIndexFinal"]
+                                    gate_level_i = each_c["gammaGateLevelEnergyInitial"]
+                                    gate_level_f = each_c["gammaGateLevelEnergyFinal"]
+                                
+                                    coinc_index_i = each_c["gammaCoincidenceLevelIndexInitial"]
+                                    coinc_index_f = each_c["gammaCoincidenceLevelIndexFinal"]
+                                    coinc_level_i = each_c["gammaCoincidenceLevelEnergyInitial"]
+                                    coinc_level_f = each_c["gammaCoincidenceLevelEnergyFinal"]
+
+                                    #abs_coinc_intensity = each_c["absoluteCoincidenceIntensity"]
+                                    #d_abs_coinc_intensity = each_c["dAbsoluteCoincidenceIntensity"]
+
+                                    # Keeping these in for now
+                                    ilevel_gammagate_halflife = each_c["gammaGateLevelHalfLifeConverted"]
+                                    d_ilevel_gammagate_halflife = each_c["dGammaGateLevelHalfLifeConverted"]
+
+                                    # Call the `show_cascades` method to figure out cascade
+                                    print(type(self.list),decay_mode,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f)
+                                    casc = gg.show_cascades(self.list,self.str,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f,True)
+
+                                    surviving_paths = []
+                                    for i,p in enumerate(casc):
+                                        PATH_KILLER = False
+                                        for c in casc[i]:
+                                            #print(c)
+                                            Ei = c[0]
+                                            Ef = c[1]
+                                            for each_d in jdict["decaySingles"]:
+                                                if Ei == int(each_d["levelIndexInitial"]) and Ef == int(each_d["levelIndexFinal"]):
+                                                    if each_d["levelIsomer"] == True and each_d["levelHalfLifeConverted"] is not None:
+                                                        if float(each_d["levelHalfLifeConverted"]) >= abs(timecut):
+                                                            print("DEAD-END: ",Ei,"->",Ef)
+                                                            PATH_KILLER = True
+
+                                        if PATH_KILLER == False:
+                                            surviving_paths.append(casc[i])
+                                    if len(surviving_paths) > 0:
+                                        #print(surviving_paths)
+                                        #ci_dci = gg.recalculate_ci(self.surviving_paths)
+                                        ci_dci = gg.recalculate_ci(self.list, decay_mode, pid, decay_index, surviving_paths)
+                                        #print("TI: ",ci_dci[0])
+                                        #print("DTI: ",ci_dci[1])
+                                        abs_coinc_intensity = ci_dci[0]
+                                        d_abs_coinc_intensity = ci_dci[1]
+                                    
+                                        coinc_list.append([gamma_gate, gamma_coinc, gate_index_i, gate_index_f, gate_level_i, gate_level_f, coinc_index_i, coinc_index_f, coinc_level_i, coinc_level_f, abs_coinc_intensity, d_abs_coinc_intensity, ilevel_gammagate_halflife, d_ilevel_gammagate_halflife])
+
+                if coinc_list == [] or len(coinc_list) == 0:
+                    print("No gamma/gamma coincidences with imposed timecut")
+                    return
+
+                #return sorted(coinc_list)
+
+        elif len(args) == 5:
+            NUM_ARGS_OK = True
+            pid = args[0]
+            decay_index = args[1]
+            i_level = args[2]
+            f_level = args[3]
+            timecut = args[4]
+            
+            decay_mode = BaseENSDF.check_decay(self.str)
+            if decay_mode == None:
+                print("Invalid decay mode.")
+                return
+            else:
+                #coinc_list = []
+                #DAUGHTER_EXISTS = False
+                #COINCIDENCE = False
+                for jdict in self.list:
+                    if jdict["datasetID"] == "GG":
+                        if jdict["parentID"] == pid and jdict["decayMode"] == decay_mode and jdict["decayIndex"] == decay_index:
+                            DAUGHTER_EXISTS = True
+
+                            # Try calling function recursively instead...
+                            all_gg_list = gg.get_gg_timecut_USER(self.list,self.str,pid,decay_index,timecut)
+                            for g in all_gg_list:
+                                if i_level == g[2] and f_level == g[3]:
+                                    # coincidences below gate
+                                    COINCIDENCE = True
+                                    coinc_list.append([g[0],g[1],g[2],g[3],g[4],g[5],g[6],g[7],g[8],g[9],g[10],g[11],g[12],g[13]])
+                                elif i_level == g[6] and f_level == g[7]:
+                                    # coincidences above gate
+                                    COINCIDENCE = True
+                                    # re-arrange order to lead with defined coincidence gates
+                                    coinc_list.append([g[0],g[1],g[6],g[7],g[8],g[9],g[2],g[3],g[4],g[5],g[10],g[11],g[12],g[13]])
+                                else:
+                                    COINCIDENCE = False
+
+                            """
+                            for each_c in jdict["decayCoincidences"]:
+                                if timecut >= 0:
+                                    #if each_c["gammaGateLevelIsomer"] == True and each_c["gammaGateLevelHalfLifeConverted"] > abs(timecut):
+                                    gamma_gate = each_c["gammaEnergyGate"]
+                                    gamma_coinc = each_c["gammaEnergyCoincidence"]
+                                        
+                                    gate_index_i = int(each_c["gammaGateLevelIndexInitial"])
+                                    gate_index_f = int(each_c["gammaGateLevelIndexFinal"])
+                                    gate_level_i = each_c["gammaGateLevelEnergyInitial"]
+                                    gate_level_f = each_c["gammaGateLevelEnergyFinal"]
+
+                                    coinc_index_i = int(each_c["gammaCoincidenceLevelIndexInitial"])
+                                    coinc_index_f = int(each_c["gammaCoincidenceLevelIndexFinal"])
+                                    coinc_level_i = each_c["gammaCoincidenceLevelEnergyInitial"]
+                                    coinc_level_f = each_c["gammaCoincidenceLevelEnergyFinal"]
+
+                                    #abs_coinc_intensity = each_c["absoluteCoincidenceIntensity"]
+                                    #d_abs_coinc_intensity = each_c["dAbsoluteCoincidenceIntensity"]
+
+                                    ilevel_gammagate_halflife = each_c["gammaGateLevelHalfLifeConverted"]
+                                    d_ilevel_gammagate_halflife = each_c["dGammaGateLevelHalfLifeConverted"]
+
+                                    if (int(i_level) == gate_index_i) and (int(f_level) == gate_index_f):
+                                        COINCIDENCE = True
+
+                                        # Call the `show_cascades` method to figure out cascade
+                                        print(type(self.list),decay_mode,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f)
+                                        casc = gg.show_cascades(self.list,self.str,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f,True)
+
+                                        surviving_paths = []
+                                        for i,p in enumerate(casc):
+                                            #PATH_KILLER = False
+                                            HITS_ISOMER = False
+                                            for c in casc[i]:
+                                                #print(c)
+                                                Ei = c[0]
+                                                Ef = c[1]
+                                                for each_d in jdict["decaySingles"]:
+                                                    if Ei == int(each_d["levelIndexInitial"]) and Ef == int(each_d["levelIndexFinal"]):
+                                                        if each_d["levelIsomer"] == True and each_d["levelHalfLifeConverted"] is not None:
+                                                            if float(each_d["levelHalfLifeConverted"]) > abs(timecut):
+                                                                print(Ei,"->",Ef)
+                                                                HITS_ISOMER = True
+                                                                #else:
+                                                                #    PATH_KILLER = True
+
+                                                #if HITS_ISOMER == False:
+                                                #    PATH_KILLER = True
+                                                #if PATH_KILLER == False:
+                                                if HITS_ISOMER == True:
+                                                    surviving_paths.append(casc[i])
+                                            if len(surviving_paths) > 0:
+                                                #print(surviving_paths)
+                                                #ci_dci = gg.recalculate_ci(self.surviving_paths)
+                                                ci_dci = gg.recalculate_ci(self.list, decay_mode, pid, decay_index, surviving_paths)
+                                                #print("TI: ",ci_dci[0])
+                                                #print("DTI: ",ci_dci[1])
+                                                abs_coinc_intensity = ci_dci[0]
+                                                d_abs_coinc_intensity = ci_dci[1]
+
+                                                coinc_list.append([gamma_gate, gamma_coinc, gate_index_i, gate_index_f, gate_level_i, gate_level_f, coinc_index_i, coinc_index_f, coinc_level_i, coinc_level_f, abs_coinc_intensity, d_abs_coinc_intensity, ilevel_gammagate_halflife, d_ilevel_gammagate_halflife])
+
+                                    elif (int(i_level) == coinc_index_i) and (int(f_level) == coinc_index_f):
+                                        COINCIDENCE = True
+
+                                        # Call the `show_cascades` method to figure out cascade
+                                        print(type(self.list),decay_mode,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f)
+                                        casc = gg.show_cascades(self.list,self.str,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f,True)
+
+                                        surviving_paths = []
+                                        for i,p in enumerate(casc):
+                                            #PATH_KILLER = False
+                                            HITS_ISOMER = False
+                                            for c in casc[i]:
+                                                #print(c)
+                                                Ei = c[0]
+                                                Ef = c[1]
+                                                for each_d in jdict["decaySingles"]:
+                                                    if Ei == int(each_d["levelIndexInitial"]) and Ef == int(each_d["levelIndexFinal"]):
+                                                        if each_d["levelIsomer"] == True and each_d["levelHalfLifeConverted"] is not None:
+                                                            if float(each_d["levelHalfLifeConverted"]) > abs(timecut):
+                                                                print(Ei,"->",Ef)
+                                                                HITS_ISOMER = True
+                                                                #else:
+                                                                #    PATH_KILLER = True
+
+                                                #if HITS_ISOMER == False:
+                                                #    PATH_KILLER = True
+                                                #if PATH_KILLER == False:
+                                                if HITS_ISOMER == True:
+                                                    surviving_paths.append(casc[i])
+                                            if len(surviving_paths) > 0:
+                                                #print(surviving_paths)
+                                                #ci_dci = gg.recalculate_ci(self.surviving_paths)
+                                                ci_dci = gg.recalculate_ci(self.list, decay_mode, pid, decay_index, surviving_paths)
+                                                #print("TI: ",ci_dci[0])
+                                                #print("DTI: ",ci_dci[1])
+                                                abs_coinc_intensity = ci_dci[0]
+                                                d_abs_coinc_intensity = ci_dci[1]
+
+                                                coinc_list.append([gamma_coinc, gamma_gate, coinc_index_i, coinc_index_f, coinc_level_i, coinc_level_f, gate_index_i, gate_index_f, gate_level_i, gate_level_f, abs_coinc_intensity, d_abs_coinc_intensity, ilevel_gammagate_halflife, d_ilevel_gammagate_halflife])
+
+                                elif timecut < 0:
+                                    #if each_c["gammaGateLevelIsomer"] == False or each_c["gammaGateLevelHalfLifeConverted"] < abs(timecut):
+                                    gamma_gate = each_c["gammaEnergyGate"]
+                                    gamma_coinc = each_c["gammaEnergyCoincidence"]
+
+                                    gate_index_i = int(each_c["gammaGateLevelIndexInitial"])
+                                    gate_index_f = int(each_c["gammaGateLevelIndexFinal"])
+                                    gate_level_i = each_c["gammaGateLevelEnergyInitial"]
+                                    gate_level_f = each_c["gammaGateLevelEnergyFinal"]
+
+                                    coinc_index_i = int(each_c["gammaCoincidenceLevelIndexInitial"])
+                                    coinc_index_f = int(each_c["gammaCoincidenceLevelIndexFinal"])
+                                    coinc_level_i = each_c["gammaCoincidenceLevelEnergyInitial"]
+                                    coinc_level_f = each_c["gammaCoincidenceLevelEnergyFinal"]
+
+                                    #abs_coinc_intensity = each_c["absoluteCoincidenceIntensity"]
+                                    #d_abs_coinc_intensity = each_c["dAbsoluteCoincidenceIntensity"]
+
+                                    ilevel_gammagate_halflife = each_c["gammaGateLevelHalfLifeConverted"]
+                                    d_ilevel_gammagate_halflife = each_c["dGammaGateLevelHalfLifeConverted"]
+
+                                    if (int(i_level) == gate_index_i) and (int(f_level) == gate_index_f):
+                                        COINCIDENCE = True
+
+                                        # Call the `show_cascades` method to figure out cascade
+                                        print(type(self.list),decay_mode,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f)
+                                        casc = gg.show_cascades(self.list,self.str,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f,True)
+
+                                        surviving_paths = []
+                                        for i,p in enumerate(casc):
+                                            PATH_KILLER = False
+                                            for c in casc[i]:
+                                                #print(c)
+                                                Ei = c[0]
+                                                Ef = c[1]
+                                                for each_d in jdict["decaySingles"]:
+                                                    if Ei == int(each_d["levelIndexInitial"]) and Ef == int(each_d["levelIndexFinal"]):
+                                                        if each_d["levelIsomer"] == True and each_d["levelHalfLifeConverted"] is not None:
+                                                            if float(each_d["levelHalfLifeConverted"]) >= abs(timecut):
+                                                                print("DEAD-END: ",Ei,"->",Ef)
+                                                                PATH_KILLER = True
+
+                                            if PATH_KILLER == False:
+                                                surviving_paths.append(casc[i])
+                                        if len(surviving_paths) > 0:
+                                            #print(surviving_paths)
+                                            #ci_dci = gg.recalculate_ci(self.surviving_paths)
+                                            ci_dci = gg.recalculate_ci(self.list, decay_mode, pid, decay_index, surviving_paths)
+                                            #print("TI: ",ci_dci[0])
+                                            #print("DTI: ",ci_dci[1])
+                                            abs_coinc_intensity = ci_dci[0]
+                                            d_abs_coinc_intensity = ci_dci[1]
+                                        
+                                            coinc_list.append([gamma_gate, gamma_coinc, gate_index_i, gate_index_f, gate_level_i, gate_level_f, coinc_index_i, coinc_index_f, coinc_level_i, coinc_level_f, abs_coinc_intensity, d_abs_coinc_intensity, ilevel_gammagate_halflife, d_ilevel_gammagate_halflife])
+
+                                    elif (int(i_level) == coinc_index_i) and (int(f_level) == coinc_index_f):
+                                        COINCIDENCE = True
+
+                                        # Call the `show_cascades` method to figure out cascade
+                                        print(type(self.list),decay_mode,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f)
+                                        casc = gg.show_cascades(self.list,self.str,pid,decay_index,gate_index_i,gate_index_f,coinc_index_i,coinc_index_f,True)
+
+                                        surviving_paths = []
+                                        for i,p in enumerate(casc):
+                                            PATH_KILLER = False
+                                            for c in casc[i]:
+                                                #print(c)
+                                                Ei = c[0]
+                                                Ef = c[1]
+                                                for each_d in jdict["decaySingles"]:
+                                                    if Ei == int(each_d["levelIndexInitial"]) and Ef == int(each_d["levelIndexFinal"]):
+                                                        if each_d["levelIsomer"] == True and each_d["levelHalfLifeConverted"] is not None:
+                                                            if float(each_d["levelHalfLifeConverted"]) >= abs(timecut):
+                                                                print("DEAD-END: ",Ei,"->",Ef)
+                                                                PATH_KILLER = True
+
+                                            if PATH_KILLER == False:
+                                                surviving_paths.append(casc[i])
+                                        if len(surviving_paths) > 0:
+                                            #print(surviving_paths)
+                                            #ci_dci = gg.recalculate_ci(self.surviving_paths)
+                                            ci_dci = gg.recalculate_ci(self.list, decay_mode, pid, decay_index, surviving_paths)
+                                            #print("TI: ",ci_dci[0])
+                                            #print("DTI: ",ci_dci[1])
+                                            abs_coinc_intensity = ci_dci[0]
+                                            d_abs_coinc_intensity = ci_dci[1]
+                                        
+                                            coinc_list.append([gamma_coinc, gamma_gate, coinc_index_i, coinc_index_f, coinc_level_i, coinc_level_f, gate_index_i, gate_index_f, gate_level_i, gate_level_f, abs_coinc_intensity, d_abs_coinc_intensity, ilevel_gammagate_halflife, d_ilevel_gammagate_halflife])                                      
+                """
+                
+                if COINCIDENCE == False:
+                    print("No gamma/gamma coincidences for defined gating-transition indices with imposed timecut")
+                    return
+                #else:
+                #    return sorted(coinc_list)
+
+        else:
+            print("Wrong number of input arguments")
+            print("Function needs to be called using one of the following methods, e.g.:")
+            print("g-g coincidences with timecut < 1 ns (1E-09 s):")
+            print("e.get_gg_timecut(cdata, \"ECBP\", \"Ga67\", 0, -1e-09)")
+            print("e.get_gg_timecut(cdata, \"ECBP\", \"Ga67\", 0, 1, 0, -1e-09)")
+            print("g-g coincidences with timecut > 0.5 ns (5E-10 s):")
+            print("e.get_gg_timecut(cdata, \"ECBP\", \"Ga67\", 0, 5e-10)")
+            print("e.get_gg_timecut(cdata, \"ECBP\", \"Ga67\", 0, 1, 0, 5e-10)")
+            return
+
+        if len(args) == 3 and NUM_ARGS_OK == True and DAUGHTER_EXISTS == True:
+            return sorted(coinc_list, key=lambda x: x[2])
+        elif len(args) == 5 and NUM_ARGS_OK == True and DAUGHTER_EXISTS == True and COINCIDENCE == True:
+            #coinc_list_s = sorted(coinc_list, key=lambda x: x[6])
+            #coinc_list = [x for x,_ in itertools.groupby(coinc_list_s)]
+            #return coinc_list
+            return sorted(coinc_list, key=lambda x: x[6])
+        else:
+            return                    
+
+
+    def recalculate_ci(self, cdata_list, decay_mode, parent_id, decay_index, spath):
+        self.cdata_list = cdata_list
+        self.decay_mode = decay_mode
+        self.parent_id = parent_id
+        self.decay_index = decay_index
+        self.spath = spath
+        if len(self.spath) > 0:
+            abs_Ei, abs_Ef = None, None
+            br_Ei, br_Ef = None, None
+            total_intensity = []
+            d_total_intensity = []
+            print("PATH ENTERS: ",self.spath)
+            for i,p in enumerate(self.spath):
+                print("Path number: {0}".format(i+1))
+                coinc_intensity = 0.0
+                d_coinc_intensity = 0.0
+                print(p)
+                print(self.spath[i][0])
+                abs_Ei = self.spath[i][0][0]
+                abs_Ef = self.spath[i][0][1]
+                print(abs_Ei,"-->",abs_Ef)
+                print(self.spath[i][-1])
+                br_Ei = self.spath[i][-1][0]
+                br_Ef = self.spath[i][-1][1]
+                print(br_Ei,"-->",br_Ef)
+
+                for jdict in self.cdata_list:
+                    if jdict["datasetID"] == "GG":
+                        if jdict["decayMode"] == self.decay_mode and jdict["parentID"] == self.parent_id and jdict["decayIndex"] == self.decay_index:
+                            for each_d in jdict["decaySingles"]:
+                                if abs_Ei == int(each_d["levelIndexInitial"]) and abs_Ef == int(each_d["levelIndexFinal"]):
+                                    coinc_intensity = each_d["absoluteGammaIntensity"]
+                                    try:
+                                        if each_d["dAbsoluteGammaIntensity"] is not None:
+                                            d_coinc_intensity = (each_d["dAbsoluteGammaIntensity"]/each_d["absoluteGammaIntensity"])**2
+                                        else:
+                                            d_coinc_intensity = 0.0
+                                    except ZeroDivisionError:
+                                        d_coinc_intensity = 0.0
+                                        
+                                    print(abs_Ei,"-->",abs_Ef)
+                                    print("ABS = ",each_d["absoluteGammaIntensity"])
+                                    print("d_ABS = ",each_d["dAbsoluteGammaIntensity"])
+                                    print("Error prop: ",d_coinc_intensity)
+
+                            for each_n in jdict["normalizedBranchingRatios"]:
+                                if br_Ei == int(each_n["levelIndexInitial"]) and br_Ef == int(each_n["levelIndexFinal"]):
+                                    coinc_intensity *= each_n["gammaBR"]
+                                    try:
+                                        if each_n["dGammaBR"] is not None:
+                                            d_coinc_intensity += (each_n["dGammaBR"]/each_n["gammaBR"])**2
+                                        else:
+                                            d_coinc_intensity += 0.0
+                                    except ZeroDivisionError:
+                                        d_coinc_intensity += 0.0
+                                    print(br_Ei,"-->",br_Ef)
+                                    print("BRG = ",each_n["gammaBR"])
+                                    print("d_BRG = ",each_n["dGammaBR"])
+                                    print("Error prop: ",d_coinc_intensity)
+
+                            for sp in self.spath[i]:
+                                Ei, Ef = None, None
+                                if (sp[0] != abs_Ei and sp[1] != abs_Ef) and (sp[0] != br_Ei and sp[1] != br_Ef):
+                                    #print("BT",sp, sp[0], sp[1])
+                                    Ei = sp[0]
+                                    Ef = sp[1]
+                                    print(Ei,Ef, "T")
+                            
+                                    for each_n in jdict["normalizedBranchingRatios"]:
+                                        if Ei == int(each_n["levelIndexInitial"]) and Ef == int(each_n["levelIndexFinal"]):
+                                            coinc_intensity *= each_n["totalTransitionBR"]
+                                            try:
+                                                if each_n["dTotalTransitionBR"] is not None:
+                                                    d_coinc_intensity += (each_n["dTotalTransitionBR"]/each_n["totalTransitionBR"])**2
+                                                else:
+                                                    d_coinc_intensity += 0.0
+                                            except ZeroDivisionError:
+                                                d_coinc_intensity += 0.0
+                                    
+                                            print("T: ",Ei,"-->",Ef)
+                                            print("TBR = ",each_n["totalTransitionBR"])
+                                            print("d_TBR = ",each_n["dTotalTransitionBR"])
+                                            print("Error prop: ",d_coinc_intensity)
+
+                print("CI:",coinc_intensity)
+                d_coinc_intensity = coinc_intensity*np.sqrt(d_coinc_intensity)
+                print("DCI:",d_coinc_intensity)
+                total_intensity.append(coinc_intensity)
+                d_total_intensity.append(d_coinc_intensity)
+            print("TI:",sum(total_intensity))
+            print("DTI:",np.sqrt(sum([df**2 for df in d_total_intensity])))
+        
+            return (sum(total_intensity),np.sqrt(sum([df**2 for df in d_total_intensity])))
