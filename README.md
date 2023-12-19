@@ -6,7 +6,11 @@ This project [[1]](#1) is a Python package enabling access, manipulation, analys
 
 The `paceENSDF` package provides users with a convenient means to access and manipulate the decay data from ENSDF [[2]](#2) with various methods to return all associated nuclear structure decay-scheme data including levels, spins, parities, &gamma;-rays information, etc.  The `Jupyter Notebooks` distributed with this package in the `notebook` folder provide an overview of some of the available methods.
 
-All ENSDF decay-scheme data sets containing &gamma;-ray information have also been used to generate coincidence &gamma;-&gamma; and &gamma;-*X*-ray JSON data structures from the corresponding decay data set [[1]](#1).  In addition to the coincidence energies and absolute intensities, together with uncertainties, these data structures contain additional meta data parsed from the original ENSDF data structure allowing users to search for single energies (both &gamma; and *X*-ray) as well as coincidence pairs.  Refer to the corresponding `Jupyter Notebooks` provided with this project to see example use cases.
+All ENSDF decay-scheme data sets containing &gamma;-ray information have also been used to generate coincidence &gamma;-&gamma; and &gamma;-*X*-ray JSON data structures from the corresponding decay data set [[1]](#1).  However, not every decay dataset in ENSDF contains &gamma;-ray data.  Of the total decay datasets only 2394 have the &gamma;-ray information needed to derive these coincidence datasets.  This number represents around 73.6% of the ENSDF archive (version: September 2023) and these decay datasets are summarized in the Figure below.  From this schematic it is clear that the &alpha;-decay datasets are most heavily impacted by the &gamma;-ray condition.
+
+![ENSDF Nuclides](coinc_decay_nuclides.png?raw=true "Schematic showing ENSDF-decay data sets containing &gamma;-ray information.")
+
+In addition to the coincidence energies and absolute intensities, together with uncertainties, these data structures contain additional meta data parsed from the original ENSDF data structure allowing users to search for single energies (both &gamma; and *X*-ray) as well as coincidence pairs.  Refer to the corresponding `Jupyter Notebooks` provided with this project to see example use cases.
 
 ### Notes on ENSDF quantities
 
@@ -25,6 +29,23 @@ $ git clone https://github.com/AaronMHurst/pace_ensdf.git
 $ cd pace_ensdf
 $ sh installation.sh
 ```
+
+Because transient-equilibrium datasets are now gradually being added to the repository we now also provide users with the option of switching between different datasets during installtion by setting approiate flags.  Short and long-name flag variants are accepted.  To install the transient-equilibrium datasets use either:
+
+```Bash
+$ sh installation.sh -t # or
+$ sh installation.sh --transient
+```
+
+To switch back to the regular ENSDF-decay datasets use one of the following three installation methods:
+
+```Bash
+$ sh installation.sh # or
+$ sh installation.sh -r # or
+$ sh installation.sh --regular
+```
+
+To inspect the script usage run `sh installation.sh -h` or `sh installation.sh --help`.
 
 # Testing
 
