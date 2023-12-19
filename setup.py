@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="paceENSDF",
-    version="0.5.0",
+    version="0.6.0",
     url="https://github.com/AaronMHurst/pace_ensdf",
     author="Aaron M. Hurst",
     author_email="amhurst@berkeley.edu",
@@ -27,5 +27,9 @@ setuptools.setup(
     include_package_data=True,
     package_data={'': ['ENSDF_JSON/*.json', 'PACE_JSON/*.json',
                        'ENSDF_RIPL/alpha/*.dat', 'ENSDF_RIPL/beta_minus/*.dat',
-                       'ENSDF_RIPL/beta_plus/*.dat', 'ENSDF_RIPL/ecbp/*.dat']},
+                       'ENSDF_RIPL/beta_plus/*.dat', 'ENSDF_RIPL/ecbp/*.dat',
+                       'TE/regular/ENSDF_JSON/*.json',
+                       'TE/regular/PACE_JSON/*.json',
+                       'TE/transient/ENSDF_JSON/*.json',
+                       'TE/transient/PACE_JSON/*.json']},
 )
