@@ -9,7 +9,7 @@ from .alpha import Alpha
 from .gamma_gamma import GammaGamma
 from .gamma_x import GammaX
 
-__version__="0.5.0"
+__version__="0.6.0"
 __author__="Aaron M. Hurst"
 
 import os
@@ -19,5 +19,5 @@ def get_data(path):
     the Python package."""
     return os.path.join(_ROOT, path)
 
-print("The JSON-formatted ENSDF-decay data sets live in directory:\n {0}".format(get_data('ENSDF_JSON')))
-print("The JSON-formatted coincidence decay-data sets live in directory:\n {0}".format(get_data('PACE_JSON')))
+#print("The JSON-formatted ENSDF-decay data sets live in directory:\n {0}".format(get_data('ENSDF_JSON')))
+#print("The JSON-formatted coincidence decay-data sets live in directory:\n {0}".format(get_data('PACE_JSON')))
