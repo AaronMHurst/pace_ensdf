@@ -8,7 +8,7 @@ The `paceENSDF` package provides users with a convenient means to access and man
 
 All ENSDF decay-scheme data sets containing &gamma;-ray information have also been used to generate coincidence &gamma;-&gamma; and &gamma;-*X*-ray JSON data structures from the corresponding decay data set [[1]](#1).  However, not every decay dataset in ENSDF contains &gamma;-ray data.  Of the total decay datasets only 2394 have the &gamma;-ray information needed to derive these coincidence datasets.  This number represents around 73.6% of the ENSDF archive (version: September 2023) and these decay datasets are summarized in the Figure below.  From this schematic it is clear that the &alpha;-decay datasets are most heavily impacted by the &gamma;-ray condition.
 
-![ENSDF Nuclides](coinc_decay_nuclides.png?raw=true "Schematic showing ENSDF-decay data sets containing &gamma;-ray information.")
+![ENSDF Nuclides](coinc_decay_nuclides.png?raw=true "Schematic showing ENSDF-decay data sets containing &gamma;-ray information")
 
 In addition to the coincidence energies and absolute intensities, together with uncertainties, these data structures contain additional meta data parsed from the original ENSDF data structure allowing users to search for single energies (both &gamma; and *X*-ray) as well as coincidence pairs.  Refer to the corresponding `Jupyter Notebooks` provided with this project to see example use cases.
 
