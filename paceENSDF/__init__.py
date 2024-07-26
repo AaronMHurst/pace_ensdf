@@ -9,7 +9,7 @@ from .alpha import Alpha
 from .gamma_gamma import GammaGamma
 from .gamma_x import GammaX
 
-__version__="0.6.0"
+__version__="0.6.3"
 __author__="Aaron M. Hurst"
 
 import os
