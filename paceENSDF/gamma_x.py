@@ -249,7 +249,7 @@ class GammaX(GammaGamma):
                         intensity_KB3 = each_s["intensityKbeta3"]
                         d_intensity_KB3 = each_s["dIntensityKbeta3"]
 
-                        singles_list.append([xray_energy_KB3, intensity_KB2, d_intensity_KB3])
+                        singles_list.append([xray_energy_KB3, intensity_KB3, d_intensity_KB3])
 
                         #singles_list.append([xray_energy_KA1, intensity_KA1, d_intensity_KA1,
                         #                     xray_energy_KA2, intensity_KA2, d_intensity_KA2,
